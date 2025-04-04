@@ -2,8 +2,45 @@
 #include <string>
 using namespace std;
 
+// Declaración de funciones
 void mostrarMenuPrincipal();
 void gestionPedidos();
+void facturacionYAnalisis(); // <-- Nueva función
+void controlInventario(); // <-- Nueva función agregada
+
+// Funciones de facturación y análisis
+void generarFactura() {
+    cout << "[Generando factura...]" << endl;
+}
+
+void consultarEstadoPago() {
+    cout << "[Consultando estados de pago...]" << endl;
+}
+
+void registrarPago() {
+    cout << "[Registrando un pago...]" << endl;
+}
+
+void verReportesFinancieros() {
+    cout << "[Mostrando reportes financieros...]" << endl;
+}
+
+// Funciones de control de inventario
+void stockDisponible() {
+    cout << "[Revisando stock disponible...]" << endl;
+}
+
+void registroMercancia() {
+    cout << "[Registrando mercancia nueva...]" << endl;
+}
+
+void ajusteInventario() {
+    cout << "[Realizando ajustes en el inventario...]" << endl;
+}
+
+void verReportesExistencia() {
+    cout << "[Mostrando reportes de existencias...]" << endl;
+}
 
 int main() {
     string nombre;
@@ -33,16 +70,14 @@ int main() {
                 gestionPedidos();
                 break;
             case 2:
-                cout << "\nControl de Inventario (pendiente)\n";
-                system("pause");
+                controlInventario();
                 break;
             case 3:
                 cout << "\nEnvios y Transportes (pendiente)\n";
                 system("pause");
                 break;
             case 4:
-                cout << "\nFacturacion y Administracion (pendiente)\n";
-                system("pause");
+                facturacionYAnalisis();
                 break;
             case 5:
                 cout << "\nReportes y Analisis (pendiente)\n";
@@ -119,3 +154,98 @@ void gestionPedidos() {
         }
     } while(opcion != 6);
 }
+
+// NUEVA FUNCION PARA FACTURACION Y ANALISIS
+void facturacionYAnalisis() {
+    int opcion;
+    bool repetir = true;
+
+    do {
+        system("cls");
+        cout << "\nFACTURACION Y ADMINISTRACION" << endl;
+        cout << "-----------------------------------" << endl;
+        cout << "1. Generar factura" << endl;
+        cout << "2. Consultar estados de pago" << endl;
+        cout << "3. Registro de pagos" << endl;
+        cout << "4. Ver reportes financieros" << endl;
+        cout << "5. Volver al menu principal" << endl;
+        cout << "Ingrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                generarFactura();
+                break;
+            case 2:
+                consultarEstadoPago();
+                break;
+            case 3:
+                registrarPago();
+                break;
+            case 4:
+                verReportesFinancieros();
+                break;
+            case 5:
+                repetir = false;
+                break;
+            default:
+                cout << "Opcion no valida" << endl;
+                break;
+        }
+
+        if (repetir) {
+            cout << "\nPresione enter para continuar...";
+            cin.ignore();
+            cin.get();
+        }
+
+    } while (repetir);
+}
+
+// NUEVA FUNCION PARA CONTROL DE INVENTARIO
+void controlInventario() {
+    int opcion;
+    bool repetir = true;
+
+    do {
+        system("cls");
+        cout << "CONTROL DE INVENTARIO" << endl;
+        cout << "-----------------------------------" << endl;
+        cout << "1. Consultar stock disponible" << endl;
+        cout << "2. Registrar nueva mercancia" << endl;
+        cout << "3. Ajustes de inventario" << endl;
+        cout << "4. Ver reportes de existencias" << endl;
+        cout << "5. Volver al menu principal" << endl;
+        cout << "Ingrese una opcion: ";
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1:
+                stockDisponible();
+                break;
+            case 2:
+                registroMercancia();
+                break;
+            case 3:
+                ajusteInventario();
+                break;
+            case 4:
+                verReportesExistencia();
+                break;
+            case 5:
+                repetir = false;
+                break;
+            default:
+                cout << "Opcion no valida" << endl;
+                break;
+        }
+
+        if (repetir) {
+            cout << "Presione enter para continuar...";
+            cin.ignore();
+            cin.get();
+        }
+
+    } while (repetir);
+}
+
