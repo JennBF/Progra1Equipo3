@@ -14,6 +14,7 @@
 #include "Clientes.h"
 #include "Proveedor.h"
 #include "Producto.h"
+#include "Transportistas.h"
 #include "bitacora.h"
 #include "globals.h"  // Incluir el archivo de globales
 
@@ -22,13 +23,14 @@ int main() {
     std::vector<Clientes> listaClientes;
     std::vector<Proveedor> listaProveedores;
     std::vector<Producto> listaProductos;
+    std::vector<Transportistas> listaTransportistas;
 
     Clientes::cargarDesdeArchivo(listaClientes);  // <- Esta línea es crucial
 
     // Sistema de login
     if (usuarioRegistrado.loginUsuarios()) {
         // Mostrar menú principal si el login es exitoso
-        MenuPrincipal::mostrar(listaClientes, listaProveedores, listaProductos, usuarioRegistrado);
+        MenuPrincipal::mostrar(listaClientes, listaProveedores, listaProductos, usuarioRegistrado, listaTransportistas);
     }
 
     // Mensaje de despedida

@@ -6,13 +6,14 @@
 #include "Clientes.h"
 #include "Proveedor.h"
 #include "Producto.h"
+#include "Transportistas.h""
 
 class MenuCatalogos {
 public:
     static void mostrar(std::vector<Clientes>& clientes,
                        std::vector<Proveedor>& proveedores,
                        std::vector<Producto>& productos,
-                       usuarios& usuarioActual);
+                       usuarios& usuarioActual, std::vector<Transportistas>& lista);
 };
 
 #endif

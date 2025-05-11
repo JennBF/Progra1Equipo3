@@ -11,3 +11,8 @@
 3151      Jennifer       Cliente modificado - ID: 3107 09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
+3000      Karina         LOGIN-FAIL                    10/05/2025     
+3001      Karina         REG-USER                      10/05/2025     
+3002      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     

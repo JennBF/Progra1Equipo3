@@ -358,3 +358,246 @@
 1746852586 source:c:\users\50240\documents\programacion1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\globals.cpp
 	"globals.h"
 
+1747002139 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"usuarios.h"
+	"MenuPrincipal.h"
+	"pedidos.h"
+	"inventario.h"
+	"envios.h"
+	"facturacion.h"
+	"reportes.h"
+	"MenuCatalogos.h"
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Transportistas.h"
+	"bitacora.h"
+	"globals.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\usuarios.h
+	<string>
+	"bitacora.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\bitacora.h
+	<string>
+	<fstream>
+	<chrono>
+	<iomanip>
+	<unordered_map>
+
+1746999421 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuprincipal.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"usuarios.h"
+	"Transportistas.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\clientes.h
+	<vector>
+	<string>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\proveedor.h
+	<string>
+	<vector>
+	<fstream>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\producto.h
+	<string>
+	<vector>
+	<fstream>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\pedidos.h
+	"bitacora.h"
+	"usuarios.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\inventario.h
+	"bitacora.h"
+	"usuarios.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\envios.h
+	"bitacora.h"
+	"usuarios.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\facturacion.h
+	"bitacora.h"
+	"usuarios.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\reportes.h
+	"bitacora.h"
+	"usuarios.h"
+
+1746999439 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menucatalogos.h
+	<vector>
+	"usuarios.h"
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Transportistas.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\globals.h
+	"pedidos.h"
+	"inventario.h"
+	"envios.h"
+	"facturacion.h"
+	"reportes.h"
+	"usuarios.h"
+	"bitacora.h"
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\bitacora.cpp
+	"bitacora.h"
+	<iostream>
+	<ctime>
+	<sstream>
+	<iomanip>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\clientes.cpp
+	"clientes.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\envios.cpp
+	"envios.h"
+	<iostream>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\facturacion.cpp
+	"facturacion.h"
+	<iostream>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\globals.cpp
+	"globals.h"
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\inventario.cpp
+	"inventario.h"
+	<iostream>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menuarchivo.cpp
+	"MenuArchivo.h"
+	"usuarios.h"
+	<iostream>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuarchivo.h
+
+1747002782 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menucatalogos.cpp
+	"MenuCatalogos.h"
+	"MenuClientes.h"
+	"MenuProveedores.h"
+	"MenuProductos.h"
+	"menutransportistas.h"
+	<iostream>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuclientes.h
+	"Clientes.h"
+	"usuarios.h"
+	<vector>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuproveedores.h
+	<vector>
+	"Proveedor.h"
+	"usuarios.h"
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuproductos.h
+	<vector>
+	"Producto.h"
+	"usuarios.h"
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menuclientes.cpp
+	"MenuClientes.h"
+	"Clientes.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1747000146 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menuprincipal.cpp
+	"menuprincipal.h"
+	"menuarchivo.h"
+	"menucatalogos.h"
+	"menuprocesos.h"
+	"usuarios.h"
+	<vector>
+	<iostream>
+
+1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuprocesos.h
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menuprocesos.cpp
+	"MenuProcesos.h"
+	"usuarios.h"
+	<iostream>
+	"pedidos.h"
+	"inventario.h"
+	"envios.h"
+	"facturacion.h"
+	"reportes.h"
+	"globals.h"
+
+1746938579 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menuproductos.cpp
+	"menuproductos.h"
+	"MenuProductos.h"
+	<iostream>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menuproveedores.cpp
+	"MenuProveedores.h"
+	<iostream>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\pedidos.cpp
+	"pedidos.h"
+	<iostream>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\producto.cpp
+	"Producto.h"
+	<iostream>
+	<algorithm>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\proveedor.cpp
+	"Proveedor.h"
+	<iostream>
+	<algorithm>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\reportes.cpp
+	"reportes.h"
+	<iostream>
+	<thread>
+	<chrono>
+
+1746924319 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\usuarios.cpp
+	"usuarios.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<iomanip>
+
+1747001774 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\transportistas.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	<string>
+
+1747005310 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\transportistas.h
+	<vector>
+	<string>
+	"Transportistas.h"
+	"usuarios.h"
+
+1747003139 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menutransportistas.h
+	<vector>
+	"Transportistas.h"
+	"usuarios.h"
+	"globals.h"
+
+1746999761 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menutransportistas.cpp
+	"menutransportistas.h"
+	"MenuTransportistas.h"
+	<iostream>
+
