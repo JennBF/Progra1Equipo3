@@ -4,6 +4,8 @@
 #include <fstream>
 #include <conio.h> // Para getch()
 #include <iomanip>
+#include "globals.h"
+
 using namespace std;
 
 extern bitacora auditoria;
@@ -185,15 +187,11 @@ void usuarios::consultarUsuarios() {
     system("pause");
 }
 
-// Getters y setters
 
-#include "usuarios.h"
-
-std::string usuarios::getNombre() {
+std::string usuarios::getNombre() const {
     return nombre;
 }
 
-
-void usuarios::setNombre(const string& nombre) {
-    this->nombre = nombre;
+std::string usuarios::getId() const {
+    return id;
 }

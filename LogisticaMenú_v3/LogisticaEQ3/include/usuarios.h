@@ -13,16 +13,15 @@ public:
     usuarios();
     ~usuarios();
     bool loginUsuarios();
-    void registrarUsuario(); // Movido a público para acceso desde login
+    void registrarUsuario();
     bool buscarUsuario(const std::string& user, const std::string& pass);
-    std::string getNombre();
+    std::string getNombre() const; // Unificar en una sola versión const
+    std::string getId() const;
     void setNombre(const std::string& nombre);
     void menuUsuarios();
     void consultarUsuarios();
     void eliminarUsuario();
     void modificarUsuario();
-    std::string getNombre() const;
-    std::string getId() const;
 };
 
 #endif // USUARIOS_H

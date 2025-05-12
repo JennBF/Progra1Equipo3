@@ -1,6 +1,9 @@
 #include "menutransportistas.h"
 #include <iostream>
 #include <limits> // Para limpieza del buffer
+#include <vector>
+#include "globals.h"
+#include "transportistas.h"
 
 using namespace std;
 

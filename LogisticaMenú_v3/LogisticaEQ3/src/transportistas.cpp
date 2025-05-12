@@ -6,6 +6,11 @@
 #include <iostream>
 #include <cstring>
 #include <cerrno>
+#include <vector>
+#include "globals.h"
+
+std::vector<Transportistas> listaTransportistas;  // DEFINICIÓN
+
 
 using namespace std;
 

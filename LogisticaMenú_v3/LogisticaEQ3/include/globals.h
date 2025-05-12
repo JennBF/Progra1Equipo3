@@ -1,18 +1,19 @@
 #ifndef GLOBALS_H
 #define GLOBALS_H
-#pragma once
 
-// Solo declaraciones forward (no incluir los headers completos)
-class Pedidos;
-class Inventario;
-class Envios;
-class Facturacion;
-class Reportes;
-class usuarios;
-class bitacora;
-class Transportistas;
+#include <vector>
+#include <string>
 
-// Declaraciones extern (sin inicialización)
+#include "usuarios.h"
+#include "bitacora.h"
+#include "reportes.h"
+#include "envios.h"
+#include "facturacion.h"
+#include "transportistas.h"
+#include "pedidos.h"
+#include "inventario.h"
+
+// Declaraciones extern (sin definición aquí)
 extern Pedidos gestorPedidos;
 extern Inventario gestorInventario;
 extern Envios gestorEnvios;

@@ -1,5 +1,11 @@
 #include "administracion.h"
 #include <iostream>
+#include <vector>
+#include "transportistas.h"
+#include "globals.h"
+
+std::vector<Transportistas> listaTransportistas;  // DEFINICIÓN
+
 
 void Administracion::mostrarUsuarios() {
     std::cout << "--- LISTA DE USUARIOS ---\n";
