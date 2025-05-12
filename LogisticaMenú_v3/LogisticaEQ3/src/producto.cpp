@@ -11,19 +11,19 @@
 
 using namespace std;
 
-// Rango de cÛdigos para productos (seg˙n tu documentaciÛn)
+// Rango de c√≥digos para productos (seg√∫n tu documentaci√≥n)
 const int CODIGO_INICIAL = 3209;
 const int CODIGO_FINAL = 3259;
 
 string Producto::generarCodigoUnico(const vector<Producto>& lista) {
-    // Buscar el primer cÛdigo disponible en el rango
+    // Buscar el primer c√≥digo disponible en el rango
     for (int i = CODIGO_INICIAL; i <= CODIGO_FINAL; ++i) {
         string codigo = to_string(i);
         if (codigoDisponible(lista, codigo)) {
             return codigo;
         }
     }
-    return ""; // Retorna cadena vacÌa si no hay cÛdigos disponibles
+    return ""; // Retorna cadena vac√≠a si no hay c√≥digos disponibles
 }
 
 bool Producto::codigoDisponible(const vector<Producto>& lista, const string& codigo) {
@@ -43,15 +43,15 @@ bool Producto::esCodigoValido(const string& codigo) {
 void Producto::agregar(vector<Producto>& lista, const string& usuarioActual) {
     Producto nuevo;
 
-    // Asignar cÛdigo autom·tico
+    // Asignar c√≥digo autom√°tico
     nuevo.codigo = generarCodigoUnico(lista);
     if (nuevo.codigo.empty()) {
-        cerr << "\n\t\tError: No hay cÛdigos disponibles para nuevos productos (rango lleno)\n";
+        cerr << "\n\t\tError: No hay c√≥digos disponibles para nuevos productos (rango lleno)\n";
         system("pause");
         return;
     }
 
-    cout << "\n\t\t=== AGREGAR PRODUCTO (CÛdigo Auto-Asignado: " << nuevo.codigo << ") ===\n";
+    cout << "\n\t\t=== AGREGAR PRODUCTO (C√≥digo Auto-Asignado: " << nuevo.codigo << ") ===\n";
 
     // Limpiar buffer antes de getline()
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -63,21 +63,21 @@ void Producto::agregar(vector<Producto>& lista, const string& usuarioActual) {
     while (!(cin >> nuevo.precio)) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "\t\tEntrada inv·lida. Ingrese un valor numÈrico para el precio: ";
+        cout << "\t\tEntrada inv√°lida. Ingrese un valor num√©rico para el precio: ";
     }
 
     cout << "\t\tStock inicial: ";
     while (!(cin >> nuevo.stock)) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "\t\tEntrada inv·lida. Ingrese un valor entero para el stock: ";
+        cout << "\t\tEntrada inv√°lida. Ingrese un valor entero para el stock: ";
     }
 
     lista.push_back(nuevo);
     guardarEnArchivo(lista);
 
-    bitacora::registrar(usuarioActual, "PRODUCTOS", "Producto agregado - CÛdigo: " + nuevo.codigo);
-    cout << "\n\t\tProducto registrado exitosamente con cÛdigo: " << nuevo.codigo << "\n";
+    bitacora::registrar(usuarioActual, "PRODUCTOS", "Producto agregado - C√≥digo: " + nuevo.codigo);
+    cout << "\n\t\tProducto registrado exitosamente con c√≥digo: " << nuevo.codigo << "\n";
     system("pause");
 }
 
@@ -85,7 +85,7 @@ void Producto::mostrar(const vector<Producto>& lista) {
     system("cls");
     cout << "\n\t\t=== INVENTARIO DE PRODUCTOS ===\n";
     cout << "\t\t" << left
-         << setw(10) << "CÛdigo"
+         << setw(10) << "C√≥digo"
          << setw(30) << "Nombre"
          << setw(15) << "Precio"
          << setw(10) << "Stock" << "\n";
@@ -106,7 +106,7 @@ void Producto::modificar(vector<Producto>& lista, const string& usuarioActual, c
         [&codigo](const Producto& p) { return p.codigo == codigo; });
 
     if (it != lista.end()) {
-        cout << "\n\t\t=== MODIFICAR PRODUCTO (CÛdigo: " << codigo << ") ===\n";
+        cout << "\n\t\t=== MODIFICAR PRODUCTO (C√≥digo: " << codigo << ") ===\n";
 
         cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Limpiar buffer
 
@@ -117,18 +117,18 @@ void Producto::modificar(vector<Producto>& lista, const string& usuarioActual, c
         while (!(cin >> it->precio)) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "\t\tEntrada inv·lida. Ingrese un valor numÈrico para el precio: ";
+            cout << "\t\tEntrada inv√°lida. Ingrese un valor num√©rico para el precio: ";
         }
 
         cout << "\t\tNuevo stock (" << it->stock << "): ";
         while (!(cin >> it->stock)) {
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "\t\tEntrada inv·lida. Ingrese un valor entero para el stock: ";
+            cout << "\t\tEntrada inv√°lida. Ingrese un valor entero para el stock: ";
         }
 
         guardarEnArchivo(lista);
-        bitacora::registrar(usuarioActual, "PRODUCTOS", "Producto modificado - CÛdigo: " + codigo);
+        bitacora::registrar(usuarioActual, "PRODUCTOS", "Producto modificado - C√≥digo: " + codigo);
         cout << "\n\t\tProducto modificado exitosamente!\n";
     } else {
         cout << "\t\tProducto no encontrado.\n";
@@ -143,7 +143,7 @@ void Producto::eliminar(vector<Producto>& lista, const string& usuarioActual, co
     if (it != lista.end()) {
         lista.erase(it);
         guardarEnArchivo(lista);
-        bitacora::registrar(usuarioActual, "PRODUCTOS", "Producto eliminado - CÛdigo: " + codigo);
+        bitacora::registrar(usuarioActual, "PRODUCTOS", "Producto eliminado - C√≥digo: " + codigo);
         cout << "\n\t\tProducto eliminado exitosamente!\n";
     } else {
         cout << "\t\tProducto no encontrado.\n";
@@ -155,18 +155,18 @@ void Producto::guardarEnArchivo(const vector<Producto>& lista) {
     // 1. Crear archivo temporal para escritura segura
     ofstream archivo("Productos.tmp", ios::out);
     if (!archivo.is_open()) {
-        cerr << "\n\t\tError crÌtico: No se pudo crear archivo temporal!\n";
+        cerr << "\n\t\tError cr√≠tico: No se pudo crear archivo temporal!\n";
         return;
     }
 
-    // 2. Escribir todos los productos con verificaciÛn
+    // 2. Escribir todos los productos con verificaci√≥n
     bool errorEscritura = false;
     for (const auto& producto : lista) {
         if (!(archivo << producto.codigo << ","
                      << producto.nombre << ","
                      << producto.precio << ","
                      << producto.stock << "\n")) {
-            cerr << "\n\t\tError al escribir producto CÛdigo: " << producto.codigo << "\n";
+            cerr << "\n\t\tError al escribir producto C√≥digo: " << producto.codigo << "\n";
             errorEscritura = true;
         }
     }
@@ -181,12 +181,12 @@ void Producto::guardarEnArchivo(const vector<Producto>& lista) {
     }
     archivo.close();
 
-    // 4. Reemplazar archivo existente (operaciÛn atÛmica)
+    // 4. Reemplazar archivo existente (operaci√≥n at√≥mica)
     if (remove("Productos.txt") != 0 && errno != ENOENT) {
         cerr << "\n\t\tAdvertencia: No se pudo eliminar archivo anterior\n";
     }
     if (rename("Productos.tmp", "Productos.txt") != 0) {
-        cerr << "\n\t\tError crÌtico: FallÛ el guardado final!\n";
+        cerr << "\n\t\tError cr√≠tico: Fall√≥ el guardado final!\n";
     }
 }
 
@@ -194,24 +194,24 @@ void Producto::cargarDesdeArchivo(vector<Producto>& lista) {
     // 1. Limpiar lista existente
     lista.clear();
 
-    // 2. Abrir archivo con verificaciÛn
+    // 2. Abrir archivo con verificaci√≥n
     ifstream archivo("Productos.txt");
     if (!archivo) {
-        // Crear archivo vacÌo si no existe
+        // Crear archivo vac√≠o si no existe
         ofstream nuevoArchivo("Productos.txt");
         if (!nuevoArchivo) {
-            cerr << "\n\t\tError crÌtico: No se pudo crear archivo de productos!\n";
+            cerr << "\n\t\tError cr√≠tico: No se pudo crear archivo de productos!\n";
         }
         return;
     }
 
-    // 3. Contadores para estadÌsticas
+    // 3. Contadores para estad√≠sticas
     int cargados = 0, omitidos = 0;
     string linea;
 
-    // 4. Procesar cada lÌnea
+    // 4. Procesar cada l√≠nea
     while (getline(archivo, linea)) {
-        // Eliminar espacios y saltos de lÌnea
+        // Eliminar espacios y saltos de l√≠nea
         linea.erase(remove_if(linea.begin(), linea.end(), ::isspace), linea.end());
         if (linea.empty()) continue;
 
@@ -219,22 +219,22 @@ void Producto::cargarDesdeArchivo(vector<Producto>& lista) {
         Producto temp;
         string campo;
 
-        // 5. Parsear campos con verificaciÛn
+        // 5. Parsear campos con verificaci√≥n
         try {
             if (!getline(ss, temp.codigo, ',') ||
                 !getline(ss, temp.nombre, ',') ||
                 !(ss >> temp.precio) ||
                 !(ss.ignore() && (ss >> temp.stock))) {
-                throw runtime_error("Formato inv·lido");
+                throw runtime_error("Formato inv√°lido");
             }
 
-            // 6. Validar cÛdigo
+            // 6. Validar c√≥digo
             if (!esCodigoValido(temp.codigo)) {
-                throw runtime_error("CÛdigo fuera de rango");
+                throw runtime_error("C√≥digo fuera de rango");
             }
 
             if (!codigoDisponible(lista, temp.codigo)) {
-                throw runtime_error("CÛdigo duplicado");
+                throw runtime_error("C√≥digo duplicado");
             }
 
             lista.push_back(temp);
@@ -254,3 +254,4 @@ void Producto::cargarDesdeArchivo(vector<Producto>& lista) {
     cout << "\n\t\tCarga completada. " << cargados << " productos cargados, "
          << omitidos << " omitidos.\n";
 }
+

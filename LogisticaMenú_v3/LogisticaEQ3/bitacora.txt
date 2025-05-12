@@ -28,6 +28,16 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3000      Jennifer       LOGIN                         09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
 
+3000      cam            REG-USER                      11/05/2025     
+3001      cam            LOGIN                         11/05/2025     
+3150      cam            Cliente agregado - ID: 3108   11/05/2025     
+3151      cam            Cliente modificado - ID: 3108 11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3200      cam            Proveedor agregado - ID: 3158 11/05/2025     
+3201      cam            Proveedor agregado - ID: 3159 11/05/2025     
 
 3000        Jennifer       000                 LOGIN                              11/05/2025 17:53:46 
 3000        Jennifer       ALMACEN             Almacén creado - ID: 3260          11/05/2025 17:54:39 

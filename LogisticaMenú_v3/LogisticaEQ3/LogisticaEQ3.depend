@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # depslib dependency file v1.0
 1746502200 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3\src\bitacora.cpp
 	"Bitacora.h"
@@ -615,6 +616,8 @@
 	<fstream>
 	<conio.h>
 	<iomanip>
+=======
+>>>>>>> e58dd914abe30855f7618c1b6d0f4543ffc28afa
 
 1747007565 source:c:\users\50240\documents\programacion1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\almacen.cpp
 	"Almacen.h"
