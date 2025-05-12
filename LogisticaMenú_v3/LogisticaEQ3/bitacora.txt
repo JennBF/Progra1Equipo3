@@ -56,3 +56,4 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3000                     REG-USER                      11/05/2025     
 3000      Karina         LOGIN-FAIL                    11/05/2025     
 3001      Karina         LOGIN-FAIL                    11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     

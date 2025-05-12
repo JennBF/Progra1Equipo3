@@ -49,6 +49,7 @@
 		<Unit filename="include/menuprocesos.h" />
 		<Unit filename="include/menuproductos.h" />
 		<Unit filename="include/menuproveedores.h" />
+		<Unit filename="include/menutransportistas.h" />
 		<Unit filename="include/pedidos.h" />
 		<Unit filename="include/producto.h" />
 		<Unit filename="include/proveedor.h" />
@@ -71,6 +72,7 @@
 		<Unit filename="src/menuprocesos.cpp" />
 		<Unit filename="src/menuproductos.cpp" />
 		<Unit filename="src/menuproveedores.cpp" />
+		<Unit filename="src/menutransportistas.cpp" />
 		<Unit filename="src/pedidos.cpp" />
 		<Unit filename="src/producto.cpp" />
 		<Unit filename="src/proveedor.cpp" />
