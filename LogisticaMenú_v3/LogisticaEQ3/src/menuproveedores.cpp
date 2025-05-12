@@ -1,3 +1,6 @@
+//Angoly Araujo Mayo 2025 9959-24-17623
+
+
 #include "MenuProveedores.h"
 #include <iostream>
 using namespace std;
@@ -17,16 +20,33 @@ void MenuProveedores::mostrar(vector<Proveedor>& lista, usuarios& usuarioActual)
              << "\t\tIngrese opción: ";
         cin >> opcion;
 
+        string id;
         switch(opcion) {
-            case 1: Proveedor::agregar(lista); break;
-            case 2: Proveedor::mostrar(lista); break;
-            case 3: Proveedor::modificar(lista); break;
-            case 4: Proveedor::eliminar(lista); break;
-            case 5: return;
-            default: cout << "Opción inválida\n";
+            case 1:
+                Proveedor::agregar(lista, usuarioActual.getNombre());
+                break;
+            case 2:
+                Proveedor::mostrar(lista);
+                break;
+            case 3:
+                cout << "\t\tIngrese ID del proveedor a modificar: ";
+                cin >> id;
+                Proveedor::modificar(lista, usuarioActual.getNombre(), id);
+                break;
+            case 4:
+                cout << "\t\tIngrese ID del proveedor a eliminar: ";
+                cin >> id;
+                Proveedor::eliminar(lista, usuarioActual.getNombre(), id);
+                break;
+            case 5:
+                return;
+            default:
+                cout << "\t\tOpción inválida\n";
         }
-        cout << "\nPresione Enter para continuar...";
+
+        cout << "\n\t\tPresione Enter para continuar...";
         cin.ignore();
         cin.get();
     } while(opcion != 5);
 }
+
