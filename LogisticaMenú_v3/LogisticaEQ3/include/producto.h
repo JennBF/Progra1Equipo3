@@ -1,9 +1,9 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
-#pragma once
-#include <string>
+
 #include <vector>
-#include <fstream>
+#include <string>
+#include "bitacora.h"
 
 class Producto {
 public:
@@ -12,14 +12,20 @@ public:
     double precio;
     int stock;
 
-    // CRUD
-    static void agregar(std::vector<Producto>& lista);
+    // Métodos CRUD
+    static void agregar(std::vector<Producto>& lista, const std::string& usuarioActual);
     static void mostrar(const std::vector<Producto>& lista);
-    static void modificar(std::vector<Producto>& lista);
-    static void eliminar(std::vector<Producto>& lista);
+    static void modificar(std::vector<Producto>& lista, const std::string& usuarioActual, const std::string& codigo);
+    static void eliminar(std::vector<Producto>& lista, const std::string& usuarioActual, const std::string& codigo);
 
-    // Persistencia
+    // Manejo de archivos
     static void guardarEnArchivo(const std::vector<Producto>& lista);
     static void cargarDesdeArchivo(std::vector<Producto>& lista);
+
+    // Validaciones
+    static bool esCodigoValido(const std::string& codigo);
+    static std::string generarCodigoUnico(const std::vector<Producto>& lista);
+    static bool codigoDisponible(const std::vector<Producto>& lista, const std::string& codigo);
 };
+
 #endif // PRODUCTO_H

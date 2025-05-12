@@ -37,9 +37,11 @@
 		<Unit filename="CODIGOS_BITACORA.md" />
 		<Unit filename="include/Inventario.h" />
 		<Unit filename="include/Reportes.h" />
+		<Unit filename="include/almacen.h" />
 		<Unit filename="include/bitacora.h" />
 		<Unit filename="include/clientes.h" />
 		<Unit filename="include/envios.h" />
+		<Unit filename="include/menualmacenes.h" />
 		<Unit filename="include/menuarchivo.h" />
 		<Unit filename="include/menucatalogos.h" />
 		<Unit filename="include/menuclientes.h" />
@@ -54,11 +56,13 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Inventario.cpp" />
 		<Unit filename="src/Reportes.cpp" />
+		<Unit filename="src/almacen.cpp" />
 		<Unit filename="src/bitacora.cpp" />
 		<Unit filename="src/clientes.cpp" />
 		<Unit filename="src/envios.cpp" />
 		<Unit filename="src/facturacion.cpp" />
 		<Unit filename="src/globals.cpp" />
+		<Unit filename="src/menualmacenes.cpp" />
 		<Unit filename="src/menuarchivo.cpp" />
 		<Unit filename="src/menucatalogos.cpp" />
 		<Unit filename="src/menuclientes.cpp" />

@@ -11,8 +11,13 @@ using namespace std;
 void MenuPrincipal::mostrar(std::vector<Clientes>& clientes,
                            std::vector<Proveedor>& proveedores,
                            std::vector<Producto>& productos,
+<<<<<<< HEAD
                            usuarios& usuarioActual
                            ){
+=======
+                           std::vector<Almacen>& almacenes,
+                           usuarios& usuarioActual) {
+>>>>>>> f25303509eeb8edd96c5008594897716d355c883
     int choice;
     do {
         system("cls");
@@ -32,7 +37,7 @@ void MenuPrincipal::mostrar(std::vector<Clientes>& clientes,
 
         switch(choice) {
             case 1: MenuArchivo::mostrar(); break;
-            case 2: MenuCatalogos::mostrar(clientes, proveedores, productos, usuarioActual); break;
+            case 2: MenuCatalogos::mostrar(clientes, proveedores, productos, almacenes, usuarioActual); break;
             case 3: MenuProcesos::mostrar(); break;
             case 4: /* INFORMES */ break;
             case 5: return;
