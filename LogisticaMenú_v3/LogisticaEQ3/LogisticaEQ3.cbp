@@ -42,6 +42,7 @@
 		<Unit filename="include/bitacora.h" />
 		<Unit filename="include/clientes.h" />
 		<Unit filename="include/envios.h" />
+		<Unit filename="include/menuadministracion.h" />
 		<Unit filename="include/menualmacenes.h" />
 		<Unit filename="include/menuarchivo.h" />
 		<Unit filename="include/menucatalogos.h" />
@@ -66,6 +67,7 @@
 		<Unit filename="src/envios.cpp" />
 		<Unit filename="src/facturacion.cpp" />
 		<Unit filename="src/globals.cpp" />
+		<Unit filename="src/menuadministracion.cpp" />
 		<Unit filename="src/menualmacenes.cpp" />
 		<Unit filename="src/menuarchivo.cpp" />
 		<Unit filename="src/menucatalogos.cpp" />
