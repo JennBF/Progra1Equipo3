@@ -358,7 +358,7 @@
 1746852586 source:c:\users\50240\documents\programacion1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\globals.cpp
 	"globals.h"
 
-1747002139 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\main.cpp
+1747011024 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\main.cpp
 	<iostream>
 	<vector>
 	<string>
@@ -373,7 +373,6 @@
 	"Clientes.h"
 	"Proveedor.h"
 	"Producto.h"
-	"Transportistas.h"
 	"bitacora.h"
 	"globals.h"
 
@@ -388,13 +387,12 @@
 	<iomanip>
 	<unordered_map>
 
-1746999421 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuprincipal.h
+1747011040 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuprincipal.h
 	<vector>
 	"Clientes.h"
 	"Proveedor.h"
 	"Producto.h"
 	"usuarios.h"
-	"Transportistas.h"
 
 1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\clientes.h
 	<vector>
@@ -430,13 +428,12 @@
 	"bitacora.h"
 	"usuarios.h"
 
-1746999439 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menucatalogos.h
+1747011058 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menucatalogos.h
 	<vector>
 	"usuarios.h"
 	"Clientes.h"
 	"Proveedor.h"
 	"Producto.h"
-	"Transportistas.h"
 
 1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\globals.h
 	"pedidos.h"
@@ -488,12 +485,11 @@
 
 1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuarchivo.h
 
-1747002782 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menucatalogos.cpp
+1747011024 source:c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\menucatalogos.cpp
 	"MenuCatalogos.h"
 	"MenuClientes.h"
 	"MenuProveedores.h"
 	"MenuProductos.h"
-	"menutransportistas.h"
 	<iostream>
 
 1746924319 c:\users\va\desktop\progra1\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menuclientes.h

@@ -2,7 +2,6 @@
 #include "MenuClientes.h"
 #include "MenuProveedores.h"
 #include "MenuProductos.h"
-#include "menutransportistas.h"
 #include <iostream>
 
 using namespace std;
@@ -10,7 +9,7 @@ using namespace std;
 void MenuCatalogos::mostrar(vector<Clientes>& clientes,
                            vector<Proveedor>& proveedores,
                            vector<Producto>& productos,
-                           usuarios& usuarioActual, vector<Transportistas>& lista) {  // Parámetros completos
+                           usuarios& usuarioActual) {  // Parámetros completos
     int opcion;
     do {
         system("cls");
@@ -28,7 +27,6 @@ void MenuCatalogos::mostrar(vector<Clientes>& clientes,
             case 1: MenuClientes::mostrar(clientes, usuarioActual); break;
             case 2: MenuProveedores::mostrar(proveedores, usuarioActual); break;
             case 3: MenuProductos::mostrar(productos, usuarioActual); break;
-            case 4: MenuTransportistas::mostrar(lista, usuarioActual);break;
             case 5: return;
             default: cout << "Opción inválida\n";
         }
