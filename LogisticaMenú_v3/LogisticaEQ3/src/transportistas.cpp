@@ -8,9 +8,8 @@
 #include <cerrno>
 #include <vector>
 #include "globals.h"
-
-std::vector<Transportistas> listaTransportistas;  // DEFINICIÓN
-
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
@@ -134,82 +133,39 @@ void Transportistas::eliminar(std::vector<Transportistas>& lista, const std::str
     system("pause");
 }
 
-void Transportistas::guardarEnArchivo(const std::vector<Transportistas>& lista) {
-    ofstream archivo("Transportistas.tmp");
-    if (!archivo) {
-        cerr << "\n\t\tError al crear archivo temporal!\n";
+void Transportistas::cargarDesdeArchivo(std::vector<Transportistas>& lista) {
+    lista.clear();
+    std::ifstream archivo("transportistas.txt");
+
+    if (!archivo.is_open()) {
+        std::ofstream nuevoArchivo("transportistas.txt");
         return;
     }
 
-    bool error = false;
-    for (const auto& t : lista) {
-        if (!(archivo << t.id << ","
-                     << t.nombre << ","
-                     << t.telefono << ","
-                     << t.vehiculo << ","
-                     << t.disponibilidad << "\n")) {
-            cerr << "\n\t\tError al escribir transportista ID: " << t.id << "\n";
-            error = true;
+    std::string linea;
+    while (std::getline(archivo, linea)) {
+        std::istringstream ss(linea);
+        Transportistas transp;
+
+
+        if (std::getline(ss, transp.id, ',') &&
+            std::getline(ss, transp.nombre, ',') &&
+            std::getline(ss, transp.telefono, ',') &&
+            std::getline(ss, transp.vehiculo, ',') &&
+            std::getline(ss, transp.disponibilidad)) {
+            lista.push_back(transp);
         }
-    }
-
-    archivo.close();
-    if (error || !archivo) {
-        remove("Transportistas.tmp");
-        return;
-    }
-
-    if (remove("Transportistas.txt") != 0 && errno != ENOENT) {
-        cerr << "\n\t\tAdvertencia: No se pudo eliminar archivo anterior\n";
-    }
-    if (rename("Transportistas.tmp", "Transportistas.txt") != 0) {
-        cerr << "\n\t\tError crítico: Falló el guardado final!\n";
     }
 }
 
-void Transportistas::cargarDesdeArchivo(std::vector<Transportistas>& lista) {
-    lista.clear();
-    ifstream archivo("Transportistas.txt");
+void Transportistas::guardarEnArchivo(const std::vector<Transportistas>& lista) {
+    std::ofstream archivo("transportistas.txt");
 
-    if (!archivo) {
-        ofstream nuevo("Transportistas.txt");
-        return;
+    for (const auto& transp : lista) {
+        archivo << transp.id << ","
+                << transp.nombre << ","
+                << transp.telefono << ","
+                << transp.vehiculo << ","
+                << transp.disponibilidad << "\n";
     }
-
-    int cargados = 0, omitidos = 0;
-    string linea;
-
-    while (getline(archivo, linea)) {
-        linea.erase(remove_if(linea.begin(), linea.end(), ::isspace), linea.end());
-        if (linea.empty()) continue;
-
-        istringstream ss(linea);
-        Transportistas temp;
-        string campo;
-
-        try {
-            if (!getline(ss, temp.id, ',') ||
-                !getline(ss, temp.nombre, ',') ||
-                !getline(ss, temp.telefono, ',') ||
-                !getline(ss, temp.vehiculo, ',') ||
-                !getline(ss, temp.disponibilidad)) {
-                throw runtime_error("Formato inválido");
-            }
-
-            if (!esIdValido(temp.id)) throw runtime_error("ID inválido");
-            if (!idDisponible(lista, temp.id)) throw runtime_error("ID duplicado");
-
-            lista.push_back(temp);
-            cargados++;
-        } catch (const exception& e) {
-            cerr << "\n\t\tAdvertencia: Transportista omitido (" << e.what() << "): " << linea << "\n";
-            omitidos++;
-        }
-    }
-
-    if (archivo.bad()) {
-        cerr << "\n\t\tError durante la lectura del archivo!\n";
-    }
-
-    cout << "\n\t\tCargados: " << cargados << " | Omitidos: " << omitidos << "\n";
 }

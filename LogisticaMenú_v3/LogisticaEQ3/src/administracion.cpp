@@ -1,13 +1,10 @@
 #include "administracion.h"
 #include <iostream>
 #include <vector>
-<<<<<<< HEAD
 #include "transportistas.h"
 #include "globals.h"
-
-std::vector<Transportistas> listaTransportistas;  // DEFINICIÓN
-
-=======
+#include <fstream>
+#include <sstream>
 #include <algorithm>
 #include <fstream>
 #include "bitacora.h"
@@ -15,7 +12,7 @@ std::vector<Transportistas> listaTransportistas;  // DEFINICIÓN
 #include <iomanip>
 #include <string>
 #include <limits> // Para numeric_limits
->>>>>>> dcc559cb15bcfdb5daa6bb5d7eac07f2a452f0a5
+
 
 using namespace std;
 
@@ -92,3 +89,123 @@ void Administracion::agregar(std::vector<Administracion>& lista, const std::stri
     std::cout << "\n\t\tAdministrador registrado exitosamente con ID: " << nuevo.id << "\n";
     system("pause");
 }
+
+void Administracion::guardarEnArchivo(const std::vector<Administracion>& lista) {
+    std::ofstream archivo("administradores.txt");
+
+    for (const auto& admin : lista) {
+        archivo << admin.id << ","
+                << admin.nombre << ","
+                << admin.cargo << ","
+                << admin.departamento << ","
+                << admin.telefono << ","
+                << admin.email << ","
+                << admin.nivelAcceso << "\n";
+    }
+}
+
+
+
+void Administracion::mostrar(const std::vector<Administracion>& lista) {
+    system("cls");
+    std::cout << "\n\t\t=== LISTA DE ADMINISTRADORES ===\n";
+    for (const auto& admin : lista) {
+        std::cout << "\t\tID: " << admin.id
+                  << " | Nombre: " << admin.nombre
+                  << " | Cargo: " << admin.cargo
+                  << " | Depto: " << admin.departamento
+                  << " | Tel: " << admin.telefono
+                  << " | Email: " << admin.email
+                  << " | Nivel: " << admin.nivelAcceso << "\n";
+    }
+    system("pause");
+}
+
+void Administracion::modificar(std::vector<Administracion>& lista, const std::string& usuarioActual, const std::string& id) {
+    auto it = std::find_if(lista.begin(), lista.end(),
+        [&id](const Administracion& a) { return a.id == id; });
+
+    if (it != lista.end()) {
+        std::cout << "\n\t\t=== MODIFICAR ADMINISTRADOR (ID: " << id << ") ===\n";
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        std::cout << "\t\tNuevo nombre (" << it->nombre << "): ";
+        std::getline(std::cin, it->nombre);
+
+        std::cout << "\t\tNuevo cargo (" << it->cargo << "): ";
+        std::getline(std::cin, it->cargo);
+
+        std::cout << "\t\tNuevo departamento (" << it->departamento << "): ";
+        std::getline(std::cin, it->departamento);
+
+        std::cout << "\t\tNuevo teléfono (" << it->telefono << "): ";
+        std::getline(std::cin, it->telefono);
+
+        std::cout << "\t\tNuevo email (" << it->email << "): ";
+        std::getline(std::cin, it->email);
+
+        std::cout << "\t\tNuevo nivel de acceso (" << it->nivelAcceso << "): ";
+        while (!(std::cin >> it->nivelAcceso) || it->nivelAcceso < 1 || it->nivelAcceso > 5) {
+            std::cout << "\t\tPor favor ingrese un nivel válido (1-5): ";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
+
+        guardarEnArchivo(lista);
+        bitacora::registrar(usuarioActual, "ADMINISTRACION", "Administrador modificado - ID: " + id);
+        std::cout << "\n\t\tAdministrador modificado exitosamente!\n";
+    } else {
+        std::cout << "\n\t\tAdministrador no encontrado!\n";
+    }
+    system("pause");
+}
+
+void Administracion::eliminar(std::vector<Administracion>& lista, const std::string& usuarioActual, const std::string& id) {
+    auto it = std::find_if(lista.begin(), lista.end(),
+        [&id](const Administracion& a) { return a.id == id; });
+
+    if (it != lista.end()) {
+        char confirmar;
+        std::cout << "\n\t\t¿Está seguro de eliminar al administrador " << it->nombre << "? (s/n): ";
+        std::cin >> confirmar;
+
+        if (tolower(confirmar) == 's') {
+            lista.erase(it);
+            guardarEnArchivo(lista);
+            bitacora::registrar(usuarioActual, "ADMINISTRACION", "Administrador eliminado - ID: " + id);
+            std::cout << "\n\t\tAdministrador eliminado exitosamente!\n";
+        } else {
+            std::cout << "\n\t\tOperación cancelada\n";
+        }
+    } else {
+        std::cout << "\n\t\tAdministrador no encontrado!\n";
+    }
+    system("pause");
+}
+
+void Administracion::cargarDesdeArchivo(std::vector<Administracion>& lista) {
+    lista.clear();
+    std::ifstream archivo("administradores.txt");
+
+    if (!archivo.is_open()) {
+        std::ofstream nuevoArchivo("administradores.txt");
+        return;
+    }
+
+    std::string linea;
+    while (std::getline(archivo, linea)) {
+        std::istringstream ss(linea);
+        Administracion admin;
+
+        if (std::getline(ss, admin.id, ',') &&
+            std::getline(ss, admin.nombre, ',') &&
+            std::getline(ss, admin.cargo, ',') &&
+            std::getline(ss, admin.departamento, ',') &&
+            std::getline(ss, admin.telefono, ',') &&
+            std::getline(ss, admin.email, ',') &&
+            (ss >> admin.nivelAcceso)) {
+            lista.push_back(admin);
+        }
+    }
+}
+

@@ -8,4 +8,4 @@ Facturacion gestorFacturacion;
 Reportes gestorReportes;
 usuarios usuarioRegistrado;
 bitacora auditoria;
-Transportistas listaTransportistas;
+std::vector<Transportistas> listaTransportistas;  // Cambiado a vector

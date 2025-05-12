@@ -5,7 +5,7 @@
 #include <vector>
 
 class Administracion {
-private:
+public:
     std::string id;
     std::string nombre;
     std::string cargo;
@@ -14,19 +14,22 @@ private:
     std::string email;
     int nivelAcceso;
 
-public:
-    // Métodos públicos
-    static std::string generarIdUnico(const std::vector<Administracion>& lista);
-    static bool idDisponible(const std::vector<Administracion>& lista, const std::string& id);
-    static bool esIdValido(const std::string& id);
-
+    // Declaraciones de métodos
     static void agregar(std::vector<Administracion>& lista, const std::string& usuarioActual);
     static void mostrar(const std::vector<Administracion>& lista);
     static void modificar(std::vector<Administracion>& lista, const std::string& usuarioActual, const std::string& id);
     static void eliminar(std::vector<Administracion>& lista, const std::string& usuarioActual, const std::string& id);
 
+    // Estas son las funciones que deben ser static también:
     static void guardarEnArchivo(const std::vector<Administracion>& lista);
     static void cargarDesdeArchivo(std::vector<Administracion>& lista);
+    std::string getId() const { return id; }
+
+    int getNivelAcceso() const { return nivelAcceso; }
+    static std::string generarIdUnico(const std::vector<Administracion>& lista);
+    static bool idDisponible(const std::vector<Administracion>& lista, const std::string& id);
+    static bool esIdValido(const std::string& id);
 };
 
 #endif
+

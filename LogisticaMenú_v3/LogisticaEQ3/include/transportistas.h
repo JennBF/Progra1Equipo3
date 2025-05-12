@@ -23,8 +23,9 @@ public:
     void mostrar(const std::vector<Transportistas>& lista);
     void modificar(std::vector<Transportistas>& lista, const std::string& usuarioActual, const std::string& id);
     void eliminar(std::vector<Transportistas>& lista, const std::string& usuarioActual, const std::string& id);
-    void guardarEnArchivo(const std::vector<Transportistas>& lista);
-    void cargarDesdeArchivo(std::vector<Transportistas>& lista);
+    static void cargarDesdeArchivo(std::vector<Transportistas>& lista);
+    static void guardarEnArchivo(const std::vector<Transportistas>& lista);
+
 };
 
 #endif // TRANSPORTISTAS_H

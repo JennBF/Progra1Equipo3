@@ -2,8 +2,6 @@
 #define GLOBALS_H
 
 #include <vector>
-#include <string>
-
 #include "usuarios.h"
 #include "bitacora.h"
 #include "reportes.h"
@@ -21,6 +19,6 @@ extern Facturacion gestorFacturacion;
 extern Reportes gestorReportes;
 extern usuarios usuarioRegistrado;
 extern bitacora auditoria;
-extern Transportistas listaTransportistas;
+extern std::vector<Transportistas> listaTransportistas;  // Cambiado a vector
 
-#endif // GLOBALS_H
+#endif // GLOB
