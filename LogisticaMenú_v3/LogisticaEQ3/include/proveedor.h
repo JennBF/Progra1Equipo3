@@ -7,6 +7,9 @@
 
 class Proveedor {
 public:
+
+    std::string getId() const;
+    std::string getNombre() const;
     // Ajustar firmas de funciones según lo que requiere el menú
     static void agregar(std::vector<Proveedor>& lista, const std::string& usuarioActual);
     static void modificar(std::vector<Proveedor>& lista, const std::string& usuarioActual, const std::string& id);

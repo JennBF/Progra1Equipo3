@@ -186,9 +186,13 @@ void usuarios::consultarUsuarios() {
 }
 
 // Getters y setters
-string usuarios::getNombre() {
+
+#include "usuarios.h"
+
+std::string usuarios::getNombre() {
     return nombre;
 }
+
 
 void usuarios::setNombre(const string& nombre) {
     this->nombre = nombre;

@@ -11,7 +11,7 @@ void MenuCatalogos::mostrar(vector<Clientes>& clientes,
                            vector<Proveedor>& proveedores,
                            vector<Producto>& productos,
                            vector<Almacen>& almacenes,
-                           usuarios& usuarioActual) {  // Parámetros completos
+                           usuarios& usuarioActual) {
     int opcion;
     do {
         system("cls");
@@ -20,7 +20,7 @@ void MenuCatalogos::mostrar(vector<Clientes>& clientes,
              << "\t\t1. Clientes\n"
              << "\t\t2. Proveedores\n"
              << "\t\t3. Productos\n"
-             << "\t\t4. Transportistas"
+             << "\t\t4. Transportistas\n"  // Añadí salto de línea
              << "\t\t5. Almacenes\n"
              << "\t\t6. Volver\n";
         cin >> opcion;
@@ -29,8 +29,9 @@ void MenuCatalogos::mostrar(vector<Clientes>& clientes,
             case 1: MenuClientes::mostrar(clientes, usuarioActual); break;
             case 2: MenuProveedores::mostrar(proveedores, usuarioActual); break;
             case 3: MenuProductos::mostrar(productos, usuarioActual); break;
-            case 4: MenuAlmacenes::mostrar(almacenes, usuarioActual); break;
-            case 5: return;
+            case 4: /* Transportistas */ break;  // Añadí break faltante
+            case 5: MenuAlmacenes::mostrar(almacenes, usuarioActual); break;
+            case 6: return;
             default: cout << "Opción inválida\n";
         }
     } while(opcion != 6);

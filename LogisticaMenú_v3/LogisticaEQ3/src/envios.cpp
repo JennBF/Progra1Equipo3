@@ -47,27 +47,27 @@ void Envios::gestionEnvios() {
 // Genera una guía de envío y registra la acción en la bitácora
 void Envios::generarGuia() {
     cout << "\n\t\t[Generando guia de envio...]" << endl;
-    auditoria.insertar(usuarioRegistrado.getNombre(), "300", "GUIA"); // Código 300 para guía
+    //auditoria.insertar(usuarioRegistrado.getNombre(), "300", "GUIA"); // Código 300 para guía
     system("pause");
 }
 
 // Asigna un transportista al envío y registra la acción
 void Envios::asignarTransportista() {
     cout << "\n\t\t[Asignando a un transportista...]" << endl;
-    auditoria.insertar(usuarioRegistrado.getNombre(), "301", "TRANSPORTISTA"); // Código 301 para asignación
+    //auditoria.insertar(usuarioRegistrado.getNombre(), "301", "TRANSPORTISTA"); // Código 301 para asignación
     system("pause");
 }
 
 // Permite rastrear un envío y registra esta acción en la bitácora
 void Envios::rastrearEnvio() {
     cout << "\n\t\t[Rastreando Envío...]" << endl;
-    auditoria.insertar(usuarioRegistrado.getNombre(), "302", "RASTREO ENVIO"); // Código 302 para rastreo
+//    auditoria.insertar(usuarioRegistrado.getNombre(), "302", "RASTREO ENVIO"); // Código 302 para rastreo
     system("pause");
 }
 
 // Confirma que el envío ha sido entregado y lo registra en la bitácora
 void Envios::confirmarEntrega() {
     cout << "\n\t\t[Entrega Confirmada...]" << endl;
-    auditoria.insertar(usuarioRegistrado.getNombre(), "303", "CONFIRMACION DE ENTREGA"); // Código 303 para confirmación
+    //auditoria.insertar(usuarioRegistrado.getNombre(), "303", "CONFIRMACION DE ENTREGA"); // Código 303 para confirmación
     system("pause");
 }

@@ -10,6 +10,8 @@
 
  class Pedidos {
  public:
+     std::string getId() const;
+     std::string getDetalles() const;
      void gestionPedidos();
      void crearPedido();
      void consultarPedidos();

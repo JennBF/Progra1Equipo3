@@ -3,18 +3,11 @@
 #include <string>
 #include "usuarios.h"
 #include "MenuPrincipal.h"
-#include "pedidos.h"
-#include "inventario.h"
-#include "envios.h"
-#include "facturacion.h"
-#include "reportes.h"
-#include "MenuCatalogos.h"
 #include "Clientes.h"
 #include "Proveedor.h"
 #include "Producto.h"
 #include "Almacen.h"
-#include "bitacora.h"
-#include "globals.h"  // Incluir el archivo de globales
+#include "globals.h"
 
 int main() {
     // Inicializar estructuras de datos
@@ -23,9 +16,8 @@ int main() {
     std::vector<Producto> listaProductos;
     std::vector<Almacen> listaAlmacenes;
 
-    Clientes::cargarDesdeArchivo(listaClientes);  // <- Esta línea es crucial
-    Almacen::cargarDesdeArchivo(listaAlmacenes);  // <- Esta línea es crucial
-
+    Clientes::cargarDesdeArchivo(listaClientes);
+    Almacen::cargarDesdeArchivo(listaAlmacenes);
 
     // Sistema de login
     if (usuarioRegistrado.loginUsuarios()) {
@@ -34,10 +26,9 @@ int main() {
     }
 
     // Mensaje de despedida
-   std::cout << "\n\t\t** Sistema de Logística - Hasta pronto **\n";
-
+    std::cout << "\n\t\t** Sistema de Logística - Hasta pronto **\n";
 
     Clientes::guardarEnArchivo(listaClientes);
     Almacen::guardarEnArchivo(listaAlmacenes);
     return 0;
-};
+}

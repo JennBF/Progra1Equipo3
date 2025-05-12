@@ -35,7 +35,7 @@ void Inventario::controlInventario() {
 
 void Inventario::consultarStock() {
     cout << "\n\t\t[Consultando stock...]" << endl;
-    auditoria.insertar(usuarioRegistrado.getNombre(), "200", "STOCK");
+//    auditoria.insertar(usuarioRegistrado.getNombre(), "200", "STOCK");
     system("pause");
 }
 // Implementar demás funciones...

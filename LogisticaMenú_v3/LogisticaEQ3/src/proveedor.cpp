@@ -203,4 +203,10 @@ void Proveedor::cargarDesdeArchivo(std::vector<Proveedor>& lista) {
 }
 
 
+std::string Proveedor::getNombre() const {
+    return nombre;
+}
 
+std::string Proveedor::getId() const {
+    return nombre;
+}

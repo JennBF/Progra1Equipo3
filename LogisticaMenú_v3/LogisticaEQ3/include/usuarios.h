@@ -21,6 +21,8 @@ public:
     void consultarUsuarios();
     void eliminarUsuario();
     void modificarUsuario();
+    std::string getNombre() const;
+    std::string getId() const;
 };
 
 #endif // USUARIOS_H

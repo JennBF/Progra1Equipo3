@@ -82,3 +82,14 @@ void Pedidos::verHistorial() {
     auditoria.registrar(usuarioRegistrado.getNombre(), "PEDIDOS", "HISTORIAL PEDIDOS");
     system("pause");
 }
+
+// usuarios.cpp
+#include "usuarios.h"
+
+std::string Pedidos::getId() const {
+    return 0;
+}
+
+std::string Pedidos::getDetalles() const {
+    return 0;
+}
