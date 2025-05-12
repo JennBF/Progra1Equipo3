@@ -1,3 +1,11 @@
 3100 Jennifer 123
+<<<<<<< HEAD
+3002 Karina alewi
+=======
+1002 cam 12345
+1001 Angel Panqueques
 1005 aleja 333
 1009 til 1111
+
+>>>>>>> f25303509eeb8edd96c5008594897716d355c883
+0  

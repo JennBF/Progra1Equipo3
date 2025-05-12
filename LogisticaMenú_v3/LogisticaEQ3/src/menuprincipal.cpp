@@ -11,8 +11,9 @@ using namespace std;
 void MenuPrincipal::mostrar(std::vector<Clientes>& clientes,
                            std::vector<Proveedor>& proveedores,
                            std::vector<Producto>& productos,
+                           usuarios& usuarioActual
                            std::vector<Almacen>& almacenes,
-                           usuarios& usuarioActual) {
+                           usuarios& usuarioActual) }
     int choice;
     do {
         system("cls");

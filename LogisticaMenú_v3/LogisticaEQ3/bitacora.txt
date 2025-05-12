@@ -1,3 +1,19 @@
+
+-------------------------- BITï¿½CORA DEL SISTEMA --------------------------
+ID_ACCION   USUARIO        MODULO              DESCRIPCION                        FECHA_HORA          
+---------------------------------------------------------------------------
+3000        Angel          000                 REG-USER                           11/05/2025 14:27:39 
+3001        Angel          000                 LOGIN                              11/05/2025 14:27:47 
+3150        Angel          CLIENTES            Cliente agregado - ID: 3107        11/05/2025 14:28:41 
+3151        Angel          CLIENTES            Cliente agregado - ID: 3108        11/05/2025 14:29:34 
+3152        Angel          CLIENTES            Cliente agregado - ID: 3109        11/05/2025 14:31:51 
+3153        Angel          CLIENTES            Cliente agregado - ID: 3110        11/05/2025 14:32:45 
+3154        Angel          CLIENTES            Cliente agregado - ID: 3111        11/05/2025 14:33:19 
+3155        Angel          CLIENTES            Cliente eliminado - ID: 3111       11/05/2025 14:33:28 
+3156        Angel          CLIENTES            Cliente agregado - ID: 3111        11/05/2025 14:34:16 
+3157        Angel          CLIENTES            Cliente agregado - ID: 3112        11/05/2025 14:35:26 
+3158        Angel          CLIENTES            Cliente agregado - ID: 3113        11/05/2025 14:36:09 
+
 3000      Jennifer       REG-USER                      09/05/2025     
 3001      Jennifer       LOGIN                         09/05/2025     
 3150      Jennifer       Cliente agregado - ID: 3107   09/05/2025     
@@ -11,16 +27,33 @@
 3151      Jennifer       Cliente modificado - ID: 3107 09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
-3000      aleja          REG-USER                      11/05/2025     
-3001      aleja          LOGIN                         11/05/2025     
-3150      aleja          Cliente agregado - ID: 3108   11/05/2025     
-3000      aleja          Almacén creado - ID: 3260     11/05/2025     
-3000      til            REG-USER                      11/05/2025     
-3001      til            LOGIN                         11/05/2025     
-3000      til            LOGIN                         11/05/2025     
-3000      til            LOGIN                         11/05/2025     
-3000      til            Almacén creado - ID: 3261     11/05/2025     
-3001      til            Almacén creado - ID: 3262     11/05/2025     
-3002      til            Almacén modificado - ID: 3261 11/05/2025     
-3003      til            Almacén eliminado - ID: 3260  11/05/2025     
-3004      til            Almacén eliminado - ID: 3262  11/05/2025     
+<<<<<<< HEAD
+3000      Karina         LOGIN-FAIL                    10/05/2025     
+3001      Karina         REG-USER                      10/05/2025     
+3002      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+=======
+
+3000      cam            REG-USER                      11/05/2025     
+3001      cam            LOGIN                         11/05/2025     
+3150      cam            Cliente agregado - ID: 3108   11/05/2025     
+3151      cam            Cliente modificado - ID: 3108 11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3000      cam            LOGIN                         11/05/2025     
+3200      cam            Proveedor agregado - ID: 3158 11/05/2025     
+3201      cam            Proveedor agregado - ID: 3159 11/05/2025     
+
+3000        Jennifer       000                 LOGIN                              11/05/2025 17:53:46 
+3000        Jennifer       ALMACEN             Almacén creado - ID: 3260          11/05/2025 17:54:39 
+3000        Jennifer       000                 LOGIN                              11/05/2025 18:01:29 
+3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:01:44 
+3151        Jennifer       CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 18:01:55 
+3000        Jennifer       000                 LOGIN                              11/05/2025 18:09:56 
+>>>>>>> f25303509eeb8edd96c5008594897716d355c883
+3000                     REG-USER                      11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     
+3001      Karina         LOGIN-FAIL                    11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     

@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
-// Incluir todos los headers necesarios
 #include "usuarios.h"
 #include "MenuPrincipal.h"
 #include "pedidos.h"
@@ -42,4 +40,4 @@ int main() {
     Clientes::guardarEnArchivo(listaClientes);
     Almacen::guardarEnArchivo(listaAlmacenes);
     return 0;
-}
+};

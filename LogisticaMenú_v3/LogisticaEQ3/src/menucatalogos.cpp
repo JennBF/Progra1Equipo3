@@ -20,8 +20,9 @@ void MenuCatalogos::mostrar(vector<Clientes>& clientes,
              << "\t\t1. Clientes\n"
              << "\t\t2. Proveedores\n"
              << "\t\t3. Productos\n"
-             << "\t\t4. Almacenes\n"
-             << "\t\t5. Volver\n";
+             << "\t\t4. Transportistas"
+             << "\t\t5. Almacenes\n"
+             << "\t\t6. Volver\n";
         cin >> opcion;
 
         switch(opcion) {
@@ -32,5 +33,5 @@ void MenuCatalogos::mostrar(vector<Clientes>& clientes,
             case 5: return;
             default: cout << "Opción inválida\n";
         }
-    } while(opcion != 5);
+    } while(opcion != 6);
 }
