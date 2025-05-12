@@ -11,13 +11,9 @@ using namespace std;
 void MenuPrincipal::mostrar(std::vector<Clientes>& clientes,
                            std::vector<Proveedor>& proveedores,
                            std::vector<Producto>& productos,
-<<<<<<< HEAD
                            usuarios& usuarioActual
-                           ){
-=======
                            std::vector<Almacen>& almacenes,
-                           usuarios& usuarioActual) {
->>>>>>> f25303509eeb8edd96c5008594897716d355c883
+                           usuarios& usuarioActual) }
     int choice;
     do {
         system("cls");

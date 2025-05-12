@@ -52,6 +52,7 @@
 		<Unit filename="include/pedidos.h" />
 		<Unit filename="include/producto.h" />
 		<Unit filename="include/proveedor.h" />
+		<Unit filename="include/transportistas.h" />
 		<Unit filename="include/usuarios.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Inventario.cpp" />
@@ -73,6 +74,7 @@
 		<Unit filename="src/pedidos.cpp" />
 		<Unit filename="src/producto.cpp" />
 		<Unit filename="src/proveedor.cpp" />
+		<Unit filename="src/transportistas.cpp" />
 		<Unit filename="src/usuarios.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

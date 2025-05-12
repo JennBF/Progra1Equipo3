@@ -6,11 +6,8 @@
 #include "Clientes.h"
 #include "Proveedor.h"
 #include "Producto.h"
-<<<<<<< HEAD
-=======
 #include "Almacen.h"
 
->>>>>>> f25303509eeb8edd96c5008594897716d355c883
 class MenuCatalogos {
 public:
     static void mostrar(std::vector<Clientes>& clientes,

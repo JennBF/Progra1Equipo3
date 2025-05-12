@@ -53,3 +53,6 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3151        Jennifer       CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 18:01:55 
 3000        Jennifer       000                 LOGIN                              11/05/2025 18:09:56 
 >>>>>>> f25303509eeb8edd96c5008594897716d355c883
+3000                     REG-USER                      11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     
+3001      Karina         LOGIN-FAIL                    11/05/2025     
