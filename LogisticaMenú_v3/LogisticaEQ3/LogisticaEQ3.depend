@@ -358,7 +358,7 @@
 1746852586 source:c:\users\50240\documents\programacion1\progra1equipo3\logisticamenú_v3\logisticaeq3\src\globals.cpp
 	"globals.h"
 
-1746959868 source:c:\users\hp\progra1equipo3\logisticamenú_v3\logisticaeq3\src\almacen.cpp
+1747010914 source:c:\users\hp\progra1equipo3\logisticamenú_v3\logisticaeq3\src\almacen.cpp
 	"Almacen.h"
 	<iostream>
 	<vector>
@@ -370,7 +370,7 @@
 	<string>
 	<limits>
 
-1746958115 c:\users\hp\progra1equipo3\logisticamenú_v3\logisticaeq3\include\almacen.h
+1747010914 c:\users\hp\progra1equipo3\logisticamenú_v3\logisticaeq3\include\almacen.h
 	<vector>
 	<string>
 	"bitacora.h"
@@ -458,7 +458,7 @@
 	<iostream>
 	<limits>
 
-1746958116 c:\users\hp\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menualmacenes.h
+1747010914 c:\users\hp\progra1equipo3\logisticamenú_v3\logisticaeq3\include\menualmacenes.h
 	<vector>
 	"Almacen.h"
 	"usuarios.h"

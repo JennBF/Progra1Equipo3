@@ -1,3 +1,4 @@
+//9959 24 11603 GE
 #include "Almacen.h"
 #include <iostream>
 #include <vector>
@@ -9,12 +10,11 @@
 #include <string>
 #include <limits> // Para numeric_limits
 
-
-// Constantes idénticas a Clientes
+// Rango de códigos de ID permitidos (compartido con Clientes)
 const int CODIGO_INICIAL = 3260;
 const int CODIGO_FINAL = 3310;
 
-// Genera ID único en rango 3260-3310 (igual que Clientes)
+// Genera un ID único dentro del rango especificado, evitando colisiones con IDs existentes
 std::string Almacen::generarID(const std::vector<Almacen>& lista) {
     for (int i = CODIGO_INICIAL; i <= CODIGO_FINAL; ++i) {
         std::string id_candidato = std::to_string(i);
@@ -25,11 +25,12 @@ std::string Almacen::generarID(const std::vector<Almacen>& lista) {
     return "";
 }
 
+// Valida que el estado sea uno de los permitidos
 bool Almacen::validarEstado(const std::string& estado) {
     return (estado == "operativo" || estado == "en mantenimiento");
 }
 
-// CREATE (idéntico a Clientes::agregar())
+// Agrega un nuevo almacén a la lista y lo registra en la bitácora
 void Almacen::agregar(std::vector<Almacen>& lista, const std::string& usuario) {
     Almacen nuevo;
     nuevo.id = generarID(lista);
@@ -40,11 +41,12 @@ void Almacen::agregar(std::vector<Almacen>& lista, const std::string& usuario) {
 
     std::cout << "=== AGREGAR ALMACÉN (ID: " << nuevo.id << ") ===\n";
 
+    // Recolecta los datos del nuevo almacén desde consola
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     std::cout << "Dirección: ";
     std::getline(std::cin, nuevo.direccion);
 
-    // Validación de capacidad (como en Clientes)
+    // Solicita una capacidad válida (entero positivo)
     while (true) {
         std::cout << "Capacidad (m²): ";
         if (std::cin >> nuevo.capacidad && nuevo.capacidad > 0) break;
@@ -60,17 +62,21 @@ void Almacen::agregar(std::vector<Almacen>& lista, const std::string& usuario) {
     std::cout << "Contacto: ";
     std::getline(std::cin, nuevo.contacto);
 
+    // Asegura que el estado ingresado sea válido
     do {
         std::cout << "Estado (operativo/en mantenimiento): ";
         std::getline(std::cin, nuevo.estado);
     } while (!validarEstado(nuevo.estado));
 
+    // Guarda el nuevo almacén en la lista y en archivo
     lista.push_back(nuevo);
     guardarEnArchivo(lista);
+
+    // Registra la acción en la bitácora
     bitacora::registrar(usuario, "ALMACEN", "Almacén creado - ID: " + nuevo.id);
 }
 
-// READ (igual que Clientes::mostrar())
+// Muestra la lista completa de almacenes
 void Almacen::mostrar(const std::vector<Almacen>& lista) {
     std::cout << "\n=== LISTA DE ALMACENES ===\n";
     for (const auto& a : lista) {
@@ -84,17 +90,18 @@ void Almacen::mostrar(const std::vector<Almacen>& lista) {
     }
 }
 
-// UPDATE (misma estructura que Clientes)
+// Modifica los datos de un almacén existente
 void Almacen::modificar(std::vector<Almacen>& lista, const std::string& usuario, const std::string& id) {
+    // Busca el almacén por ID
     auto it = std::find_if(lista.begin(), lista.end(),
         [&id](const Almacen& a) { return a.id == id; });
 
     if (it != lista.end()) {
+        // Actualiza los datos del almacén
         std::cin.ignore();
         std::cout << "Nueva dirección: ";
         std::getline(std::cin, it->direccion);
 
-        // Validación idéntica a Clientes
         while (true) {
             std::cout << "Nueva capacidad: ";
             if (std::cin >> it->capacidad && it->capacidad > 0) break;
@@ -115,6 +122,7 @@ void Almacen::modificar(std::vector<Almacen>& lista, const std::string& usuario,
             std::getline(std::cin, it->estado);
         } while (!validarEstado(it->estado));
 
+        // Guarda cambios y registra en bitácora
         guardarEnArchivo(lista);
         bitacora::registrar(usuario, "ALMACEN", "Almacén modificado - ID: " + id);
     } else {
@@ -122,7 +130,7 @@ void Almacen::modificar(std::vector<Almacen>& lista, const std::string& usuario,
     }
 }
 
-// DELETE (idéntico a Clientes)
+// Elimina un almacén según su ID
 void Almacen::eliminar(std::vector<Almacen>& lista, const std::string& usuario, const std::string& id) {
     auto it = std::find_if(lista.begin(), lista.end(),
         [&id](const Almacen& a) { return a.id == id; });
@@ -136,7 +144,7 @@ void Almacen::eliminar(std::vector<Almacen>& lista, const std::string& usuario, 
     }
 }
 
-// Persistencia (mismo enfoque que Clientes)
+// Guarda toda la lista de almacenes en un archivo de texto plano
 void Almacen::guardarEnArchivo(const std::vector<Almacen>& lista) {
     std::ofstream archivo("almacenes.txt");
     for (const auto& a : lista) {
@@ -145,6 +153,7 @@ void Almacen::guardarEnArchivo(const std::vector<Almacen>& lista) {
     }
 }
 
+// Carga la lista de almacenes desde el archivo de texto
 void Almacen::cargarDesdeArchivo(std::vector<Almacen>& lista) {
     std::ifstream archivo("almacenes.txt");
     std::string linea;
