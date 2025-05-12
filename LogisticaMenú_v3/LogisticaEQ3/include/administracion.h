@@ -1,48 +1,32 @@
 #ifndef ADMINISTRACION_H
 #define ADMINISTRACION_H
 
-#include <iostream>
+#include <string>
 #include <vector>
-#include "usuarios.h"
-#include "clientes.h"
-#include "proveedor.h"
-#include "producto.h"
-#include "pedidos.h"
-#include "transportistas.h"
 
 class Administracion {
 private:
-    std::vector<usuarios> listaUsuarios;
-    std::vector<Clientes> listaClientes;
-    std::vector<Proveedor> listaProveedores;
-    std::vector<Producto> listaProductos;
-    std::vector<Pedidos> listaPedidos;
-    std::vector<Transportistas> listaTransportistas;
+    std::string id;
+    std::string nombre;
+    std::string cargo;
+    std::string departamento;
+    std::string telefono;
+    std::string email;
+    int nivelAcceso;
 
 public:
-    // Métodos para gestionar usuarios
-    void agregarUsuario(const usuarios& nuevoUsuario);
-    void mostrarUsuarios();
+    // Métodos públicos
+    static std::string generarIdUnico(const std::vector<Administracion>& lista);
+    static bool idDisponible(const std::vector<Administracion>& lista, const std::string& id);
+    static bool esIdValido(const std::string& id);
 
-    // Métodos para gestionar clientes
-    void agregarCliente(const Clientes& nuevoCliente);
-    void mostrarClientes();
+    static void agregar(std::vector<Administracion>& lista, const std::string& usuarioActual);
+    static void mostrar(const std::vector<Administracion>& lista);
+    static void modificar(std::vector<Administracion>& lista, const std::string& usuarioActual, const std::string& id);
+    static void eliminar(std::vector<Administracion>& lista, const std::string& usuarioActual, const std::string& id);
 
-    // Métodos para gestionar proveedores
-    void agregarProveedor(const Proveedor& nuevoProveedor);
-    void mostrarProveedores();
-
-    // Métodos para gestionar productos
-    void agregarProducto(const Producto& nuevoProducto);
-    void mostrarProductos();
-
-    // Métodos para gestionar pedidos
-    void agregarPedido(const Pedidos& nuevoPedido);
-    void mostrarPedidos();
-
-    // Métodos para gestionar transportistas
-    void agregarTransportista(const Transportistas& nuevoTransportista);
-    void mostrarTransportistas();
+    static void guardarEnArchivo(const std::vector<Administracion>& lista);
+    static void cargarDesdeArchivo(std::vector<Administracion>& lista);
 };
 
-#endif // ADMINISTRACION_H
+#endif

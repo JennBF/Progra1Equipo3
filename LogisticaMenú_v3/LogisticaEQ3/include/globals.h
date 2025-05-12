@@ -20,6 +20,6 @@ extern Facturacion gestorFacturacion;
 extern Reportes gestorReportes;
 extern usuarios usuarioRegistrado;
 extern bitacora auditoria;
-extern std::vector<Transportistas> listaTransportistas;
+extern Transportistas listaTransportistas;
 
 #endif // GLOBALS_H
