@@ -27,6 +27,13 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3151      Jennifer       Cliente modificado - ID: 3107 09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
+<<<<<<< HEAD
+3000      Karina         LOGIN-FAIL                    10/05/2025     
+3001      Karina         REG-USER                      10/05/2025     
+3002      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+=======
 
 3000      cam            REG-USER                      11/05/2025     
 3001      cam            LOGIN                         11/05/2025     
@@ -45,6 +52,14 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:01:44 
 3151        Jennifer       CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 18:01:55 
 3000        Jennifer       000                 LOGIN                              11/05/2025 18:09:56 
+<<<<<<< HEAD
 3000        Jennifer       000                 LOGIN                              11/05/2025 18:47:00 
 3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:47:28 
 3200        Jennifer       PROVEEDORES         Proveedor agregado - ID: 3158      11/05/2025 18:47:48 
+=======
+>>>>>>> f25303509eeb8edd96c5008594897716d355c883
+3000                     REG-USER                      11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     
+3001      Karina         LOGIN-FAIL                    11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     
+>>>>>>> 02e629266d15ab101ee480c991b66823e8b1b769

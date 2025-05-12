@@ -40,4 +40,4 @@ int main() {
     Clientes::guardarEnArchivo(listaClientes);
     Almacen::guardarEnArchivo(listaAlmacenes);
     return 0;
-}
+};

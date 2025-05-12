@@ -11,9 +11,9 @@
 class MenuPrincipal {
 public:
     static void mostrar(std::vector<Clientes>& clientes,
-                       std::vector<Proveedor>& proveedores,
-                       std::vector<Producto>& productos,
-                       std::vector<Almacen>& almacenes,
-                       usuarios& usuarioActual);
-};
+                        std::vector<Proveedor>& proveedores,
+                        std::vector<Producto>& productos,
+                        usuarios& usuarioActual
+                        );
+
 #endif // MENUPRINCIPAL_H
