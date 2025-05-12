@@ -181,4 +181,3 @@ void bitacora::menuBitacora() {
         }
     } while(opcion != 6); // Repite hasta que se elija salir
 }
-

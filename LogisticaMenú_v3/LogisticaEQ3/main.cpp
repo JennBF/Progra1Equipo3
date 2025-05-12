@@ -1,8 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
-// Incluir todos los headers necesarios
 #include "usuarios.h"
 #include "MenuPrincipal.h"
 #include "pedidos.h"

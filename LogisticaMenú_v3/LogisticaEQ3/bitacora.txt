@@ -29,3 +29,9 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3000      Jennifer       LOGIN                         09/05/2025     
 
 
+3000        Jennifer       000                 LOGIN                              11/05/2025 17:53:46 
+3000        Jennifer       ALMACEN             Almacén creado - ID: 3260          11/05/2025 17:54:39 
+3000        Jennifer       000                 LOGIN                              11/05/2025 18:01:29 
+3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:01:44 
+3151        Jennifer       CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 18:01:55 
+3000        Jennifer       000                 LOGIN                              11/05/2025 18:09:56 
