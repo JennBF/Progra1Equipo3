@@ -7,7 +7,6 @@
 
 using namespace std;
 
-// Definir las constantes aquí o incluirlas desde Clientes.h
 const int CODIGO_INICIAL = 3107;
 const int CODIGO_FINAL = 3157;
 

@@ -27,6 +27,13 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3151      Jennifer       Cliente modificado - ID: 3107 09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
 3000      Jennifer       LOGIN                         09/05/2025     
+<<<<<<< HEAD
+3000      Karina         LOGIN-FAIL                    10/05/2025     
+3001      Karina         REG-USER                      10/05/2025     
+3002      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+3000      Karina         LOGIN                         10/05/2025     
+=======
 
 3000      cam            REG-USER                      11/05/2025     
 3001      cam            LOGIN                         11/05/2025     
@@ -45,4 +52,45 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:01:44 
 3151        Jennifer       CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 18:01:55 
 3000        Jennifer       000                 LOGIN                              11/05/2025 18:09:56 
+<<<<<<< HEAD
 3000        Angel          000                 LOGIN                              11/05/2025 18:59:35 
+=======
+<<<<<<< HEAD
+3000        Jennifer       000                 LOGIN                              11/05/2025 18:47:00 
+3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:47:28 
+3200        Jennifer       PROVEEDORES         Proveedor agregado - ID: 3158      11/05/2025 18:47:48 
+=======
+>>>>>>> f25303509eeb8edd96c5008594897716d355c883
+3000                     REG-USER                      11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     
+3001      Karina         LOGIN-FAIL                    11/05/2025     
+3000      Karina         LOGIN-FAIL                    11/05/2025     
+>>>>>>> 02e629266d15ab101ee480c991b66823e8b1b769
+3000        Jennifer       000                 LOGIN-FAIL                         11/05/2025 22:39:18 
+3001        Jennifer       000                 REG-USER                           11/05/2025 22:39:31 
+3002        Jennifer       000                 LOGIN-FAIL                         11/05/2025 22:39:39 
+3000        Jennifer       000                 LOGIN-FAIL                         11/05/2025 22:40:16 
+3001        Jennifer       000                 REG-USER                           11/05/2025 22:40:35 
+3002        Jennifer       000                 LOGIN-FAIL                         11/05/2025 22:40:41 
+3000        Jennifer       000                 LOGIN                              11/05/2025 22:43:22 
+3000        Jennifer       000                 LOGIN                              11/05/2025 23:10:16 
+3000        alfin          000                 REG-USER                           11/05/2025 23:11:25 
+3001        alfin          000                 LOGIN                              11/05/2025 23:11:32 
+3000        alfin          ADMINISTRACION      Administrador agregado - ID: 3362  11/05/2025 23:12:24 
+3000        alfin          000                 LOGIN                              11/05/2025 23:13:41 
+3000        Jennifer       000                 LOGIN                              11/05/2025 23:49:34 
+3000        alfin          000                 LOGIN                              11/05/2025 23:50:11 
+3150        alfin          CLIENTES            Cliente agregado - ID: 3107        11/05/2025 23:50:48 
+3151        alfin          CLIENTES            Cliente modificado - ID: 3107      11/05/2025 23:51:24 
+3152        alfin          CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 23:51:40 
+3200        alfin          PROVEEDORES         Proveedor agregado - ID: 3158      11/05/2025 23:52:01 
+3201        alfin          PROVEEDORES         Proveedor modificado - ID: 3158    11/05/2025 23:52:32 
+3202        alfin          PROVEEDORES         Proveedor eliminado - ID: 3158     11/05/2025 23:52:50 
+3250        alfin          PRODUCTOS           Producto agregado - CÃ³digo: 3210  11/05/2025 23:53:20 
+3251        alfin          PRODUCTOS           Producto modificado - CÃ³digo: 321011/05/2025 23:53:53 
+3252        alfin          PRODUCTOS           Producto eliminado - CÃ³digo: 3209 11/05/2025 23:54:02 
+3000        alfin          ALMACEN             Almacén creado - ID: 3262          11/05/2025 23:54:45 
+3001        alfin          ALMACEN             Almacén modificado - ID: 3262      11/05/2025 23:55:33 
+3002        alfin          ALMACEN             Almacén eliminado - ID: 3262       11/05/2025 23:55:43 
+3000        alfin          ADMINISTRACION      Administrador agregado - ID: 3363  11/05/2025 23:58:29 
+>>>>>>> d0e244506ed3392421b57272c4f3143802eddba4
