@@ -15,7 +15,6 @@
      void consultarPedidos();
      void modificarPedido();
      void cancelarPedido();
-     void verHistorial();
  };
 
 #endif // PEDIDOS_H

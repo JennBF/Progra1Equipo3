@@ -1,0 +1,364 @@
+# depslib dependency file v1.0
+1747367802 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"usuarios.h"
+	"MenuPrincipal.h"
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"globals.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\usuarios.h
+	<string>
+	"bitacora.h"
+
+1747356912 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\bitacora.h
+	<string>
+	<fstream>
+	<chrono>
+	<iomanip>
+	<unordered_map>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuprincipal.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"usuarios.h"
+	"pedidos.h"
+
+1747368831 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\clientes.h
+	<vector>
+	<string>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\proveedor.h
+	<vector>
+	<string>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\producto.h
+	<vector>
+	<string>
+	"bitacora.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\almacen.h
+	<string>
+	<vector>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\administracion.h
+	<string>
+	<vector>
+
+1747372553 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\transportistas.h
+	<iostream>
+	<vector>
+	<string>
+
+1747368942 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\pedidos.h
+	<string>
+	<vector>
+	<ctime>
+	<stdexcept>
+	"usuarios.h"
+	"bitacora.h"
+	"clientes.h"
+	"producto.h"
+	"almacen.h"
+	"envios.h"
+	"transportistas.h"
+
+1747374467 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\envios.h
+	<string>
+	<vector>
+	"transportistas.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\globals.h
+	<vector>
+	"usuarios.h"
+	"bitacora.h"
+	"reportes.h"
+	"envios.h"
+	"facturacion.h"
+	"transportistas.h"
+	"pedidos.h"
+	"inventario.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\reportes.h
+	"bitacora.h"
+	"usuarios.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\facturacion.h
+	"bitacora.h"
+	"usuarios.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\inventario.h
+	"bitacora.h"
+	"usuarios.h"
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\administracion.cpp
+	"administracion.h"
+	<iostream>
+	<vector>
+	"transportistas.h"
+	"globals.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\almacen.cpp
+	"Almacen.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747357274 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\bitacora.cpp
+	"bitacora.h"
+	<iostream>
+	<ctime>
+	<sstream>
+	<iomanip>
+	<fstream>
+	<cstring>
+
+1747355455 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\clientes.cpp
+	"clientes.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747375372 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\envios.cpp
+	"envios.h"
+	"pedidos.h"
+	"transportistas.h"
+	"almacen.h"
+	"clientes.h"
+	"bitacora.h"
+	<fstream>
+	<iostream>
+	<algorithm>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\facturacion.cpp
+	"facturacion.h"
+	<iostream>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\globals.cpp
+	"globals.h"
+
+1747356365 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\inventario.cpp
+	"inventario.h"
+	<iostream>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuadministracion.cpp
+	"menuadministracion.h"
+	"Administracion.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+	<algorithm>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuadministracion.h
+	<vector>
+	"Administracion.h"
+	"usuarios.h"
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menualmacenes.cpp
+	"MenuAlmacenes.h"
+	<iostream>
+	<limits>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menualmacenes.h
+	<vector>
+	"Almacen.h"
+	"usuarios.h"
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuarchivo.cpp
+	"MenuArchivo.h"
+	"usuarios.h"
+	<iostream>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuarchivo.h
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menucatalogos.cpp
+	"MenuCatalogos.h"
+	"MenuClientes.h"
+	"MenuProveedores.h"
+	"MenuProductos.h"
+	"MenuAlmacenes.h"
+	"MenuAdministracion.h"
+	"MenuTransportistas.h"
+	<iostream>
+	<limits>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menucatalogos.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"usuarios.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuclientes.h
+	"Clientes.h"
+	"usuarios.h"
+	<vector>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuproveedores.h
+	<vector>
+	"proveedor.h"
+	"usuarios.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuproductos.h
+	<vector>
+	"Producto.h"
+	"usuarios.h"
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menutransportistas.h
+	<vector>
+	"transportistas.h"
+	"usuarios.h"
+
+1747355464 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuclientes.cpp
+	"MenuClientes.h"
+	"Clientes.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuprincipal.cpp
+	"menuprincipal.h"
+	"menuarchivo.h"
+	"menucatalogos.h"
+	"menuprocesos.h"
+	"usuarios.h"
+	<vector>
+	<iostream>
+
+1747352504 c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuprocesos.h
+	<vector>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuprocesos.cpp
+	"MenuProcesos.h"
+	"usuarios.h"
+	<iostream>
+	"pedidos.h"
+	"inventario.h"
+	"envios.h"
+	"facturacion.h"
+	"reportes.h"
+	"globals.h"
+	"clientes.h"
+	"producto.h"
+	"Almacen.h"
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuproductos.cpp
+	"MenuProductos.h"
+	"Producto.h"
+	<iostream>
+	<limits>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuproveedores.cpp
+	"MenuProveedores.h"
+	<iostream>
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menutransportistas.cpp
+	"menutransportistas.h"
+	<iostream>
+	<limits>
+	<vector>
+	"globals.h"
+	"transportistas.h"
+
+1747405767 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\pedidos.cpp
+	"pedidos.h"
+	"clientes.h"
+	"producto.h"
+	"Almacen.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<algorithm>
+	<limits>
+	<ctime>
+	"envios.h"
+	"transportistas.h"
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\producto.cpp
+	"Producto.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+	"bitacora.h"
+
+1747352504 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\proveedor.cpp
+	"proveedor.h"
+	"bitacora.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747356410 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\reportes.cpp
+	"reportes.h"
+	<iostream>
+	<thread>
+	<chrono>
+
+1747372553 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\transportistas.cpp
+	"transportistas.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<limits>
+	<iostream>
+	<cstring>
+	<cerrno>
+	<vector>
+	"globals.h"
+
+1747356450 source:c:\users\mende\onedrive\documents\laboratorio\progra1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\usuarios.cpp
+	"usuarios.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<iomanip>
+	"globals.h"
+
