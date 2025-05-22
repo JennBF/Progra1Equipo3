@@ -1,0 +1,863 @@
+# depslib dependency file v1.0
+1747667206 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\almacen.cpp
+	"Almacen.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<limits>
+	<cstring>
+
+1747594153 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\almacen.h
+	<vector>
+	<string>
+	<algorithm>
+
+1747701470 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\bitacora.h
+	<string>
+	<unordered_map>
+
+1747701470 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\bitacora.cpp
+	"bitacora.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<ctime>
+	<iomanip>
+	<unordered_map>
+	<chrono>
+	<cstring>
+	<set>
+	<cstring>
+
+1747791645 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\clientes.cpp
+	"clientes.h"
+	<iostream>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747791645 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\clientes.h
+	<vector>
+	<string>
+
+1747812333 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\inventario.cpp
+	"inventario.h"
+	"producto.h"
+	"almacen.h"
+	"proveedor.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<vector>
+	<algorithm>
+	<map>
+
+1747801571 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\inventario.h
+	"bitacora.h"
+	"usuarios.h"
+	"producto.h"
+	"almacen.h"
+	"proveedor.h"
+	<vector>
+	<string>
+	<ctime>
+
+1747668204 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\usuarios.h
+	<string>
+	"bitacora.h"
+
+1747701470 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\envios.cpp
+	"envios.h"
+	"pedidos.h"
+	"transportistas.h"
+	"almacen.h"
+	"clientes.h"
+	"bitacora.h"
+	<fstream>
+	<iostream>
+	<algorithm>
+	<limits>
+	<iomanip>
+
+1747701470 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\envios.h
+	<string>
+	<vector>
+	"transportistas.h"
+
+1747667206 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menualmacenes.cpp
+	"MenuAlmacenes.h"
+	"Almacen.h"
+	<iostream>
+	<limits>
+
+1747034343 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menualmacenes.h
+	<vector>
+	"Almacen.h"
+	"usuarios.h"
+
+1747701621 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuarchivo.cpp
+	"MenuArchivo.h"
+	"usuarios.h"
+	<iostream>
+	"globals.h"
+
+1747627807 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuarchivo.h
+
+1747667206 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"usuarios.h"
+	"MenuPrincipal.h"
+	"Clientes.h"
+	"proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"globals.h"
+	"Inventario.h"
+
+1747802662 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuprincipal.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"usuarios.h"
+	"pedidos.h"
+	"menuinformes.h"
+
+1747802662 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\proveedor.h
+	<vector>
+	<string>
+
+1747604974 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\producto.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	"bitacora.h"
+
+1747035653 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\administracion.h
+	<string>
+	<vector>
+
+1747668204 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\transportistas.h
+	<iostream>
+	<vector>
+	<string>
+
+1747038336 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\globals.h
+	<vector>
+	"usuarios.h"
+	"bitacora.h"
+	"reportes.h"
+	"envios.h"
+	"facturacion.h"
+	"transportistas.h"
+	"pedidos.h"
+	"inventario.h"
+
+1747611974 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\reportes.h
+	<vector>
+	<string>
+	<ctime>
+	"bitacora.h"
+	"usuarios.h"
+
+1747802662 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\facturacion.h
+	<string>
+
+1747666702 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\pedidos.h
+	<vector>
+	<string>
+	<ctime>
+	<stdexcept>
+	"usuarios.h"
+	"bitacora.h"
+	"clientes.h"
+	"producto.h"
+	"almacen.h"
+	"envios.h"
+	"transportistas.h"
+
+1747619700 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\administracion.cpp
+	"administracion.h"
+	<iostream>
+	<vector>
+	"transportistas.h"
+	"globals.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747038336 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\globals.cpp
+	"globals.h"
+
+1747791645 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuclientes.cpp
+	"MenuClientes.h"
+	"Clientes.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1747032333 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuclientes.h
+	"Clientes.h"
+	"usuarios.h"
+	<vector>
+
+1747810889 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuprincipal.cpp
+	"menuprincipal.h"
+	"menuarchivo.h"
+	"menucatalogos.h"
+	"menuprocesos.h"
+	"menuinformes.h"
+	"usuarios.h"
+	"bitacora.h"
+	<vector>
+	<iostream>
+
+1747038336 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menucatalogos.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"usuarios.h"
+
+1747810870 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuprocesos.h
+	<vector>
+
+1747809886 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuprocesos.cpp
+	"MenuProcesos.h"
+	"usuarios.h"
+	<iostream>
+	"pedidos.h"
+	"Inventario.h"
+	"envios.h"
+	"facturacion.h"
+	"reportes.h"
+	"globals.h"
+	"clientes.h"
+	"producto.h"
+	"Almacen.h"
+
+1747802662 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuproveedores.cpp
+	"MenuProveedores.h"
+	<iostream>
+
+1747505635 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuproveedores.h
+	<vector>
+	"proveedor.h"
+	"usuarios.h"
+
+1747035653 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menutransportistas.cpp
+	"menutransportistas.h"
+	<iostream>
+	<limits>
+	<vector>
+	"globals.h"
+	"transportistas.h"
+
+1747035653 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menutransportistas.h
+	<vector>
+	"transportistas.h"
+	"usuarios.h"
+
+1747629017 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\pedidos.cpp
+	"pedidos.h"
+	"clientes.h"
+	"producto.h"
+	"Almacen.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<algorithm>
+	<limits>
+	<ctime>
+	"envios.h"
+	"transportistas.h"
+
+1747629017 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\producto.cpp
+	"Producto.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+	"bitacora.h"
+
+1747802662 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\proveedor.cpp
+	"proveedor.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+	<limits>
+	<cstring>
+	<ctime>
+
+1747667206 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\reportes.cpp
+	"Reportes.h"
+	<iostream>
+	<thread>
+	<chrono>
+	<iomanip>
+	<algorithm>
+	<sstream>
+	<fstream>
+	<cstdlib>
+	<limits>
+
+1747619700 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\transportistas.cpp
+	"transportistas.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<limits>
+	<iostream>
+	<cstring>
+	<cerrno>
+	<vector>
+	"globals.h"
+
+1747600936 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuproductos.cpp
+	"MenuProductos.h"
+	"Producto.h"
+	<iostream>
+	<limits>
+
+1747666700 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuproductos.h
+	<vector>
+	"Producto.h"
+	"usuarios.h"
+
+1747810530 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\usuarios.cpp
+	"usuarios.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<iomanip>
+	<algorithm>
+	<sstream>
+	<set>
+	"globals.h"
+
+1747802662 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\facturacion.cpp
+	"facturacion.h"
+	"clientes.h"
+	"pedidos.h"
+	"bitacora.h"
+	"usuarios.h"
+	<fstream>
+	<iomanip>
+	<cstring>
+	<algorithm>
+	<regex>
+
+1747591662 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuadministracion.cpp
+	"menuadministracion.h"
+	"Administracion.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+	<algorithm>
+
+1747035653 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuadministracion.h
+	<vector>
+	"Administracion.h"
+	"usuarios.h"
+
+1747038336 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menucatalogos.cpp
+	"MenuCatalogos.h"
+	"MenuClientes.h"
+	"MenuProveedores.h"
+	"MenuProductos.h"
+	"MenuAlmacenes.h"
+	"MenuAdministracion.h"
+	"MenuTransportistas.h"
+	<iostream>
+	<limits>
+
+1747802662 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\src\menuinformes.cpp
+	"menuinformes.h"
+	"usuarios.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+
+1747802662 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\menuinformes.h
+	"usuarios.h"
+
+1747613926 source:c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\backup_manager.cpp
+	"backup_manager.h"
+	<iostream>
+	<string>
+	"globals.h"
+	"bitacora.h"
+
+1747627807 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\backup_manager.h
+	<string>
+	<vector>
+
+1747627807 c:\users\50240\documents\programacion1\proyectop12k25\equipo3\logisticaeq3_v2\logisticamenú_v2\include\backup_manager.h
+	<string>
+	<vector>
+
+1747667206 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\main.cpp
+	<iostream>
+	<vector>
+	<string>
+	"usuarios.h"
+	"MenuPrincipal.h"
+	"Clientes.h"
+	"proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"globals.h"
+	"Inventario.h"
+
+1747668204 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\usuarios.h
+	<string>
+	"bitacora.h"
+
+1747836965 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\bitacora.h
+	<string>
+	<unordered_map>
+
+1747802662 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuprincipal.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"usuarios.h"
+	"pedidos.h"
+	"menuinformes.h"
+
+1747791645 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\clientes.h
+	<vector>
+	<string>
+
+1747802662 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\proveedor.h
+	<vector>
+	<string>
+
+1747604974 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\producto.h
+	<vector>
+	<string>
+	<fstream>
+	<iostream>
+	"bitacora.h"
+
+1747594153 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\almacen.h
+	<vector>
+	<string>
+	<algorithm>
+
+1747035653 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\administracion.h
+	<string>
+	<vector>
+
+1747668204 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\transportistas.h
+	<iostream>
+	<vector>
+	<string>
+
+1747881646 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\pedidos.h
+	<vector>
+	<string>
+	<ctime>
+	<stdexcept>
+	"usuarios.h"
+	"bitacora.h"
+	"clientes.h"
+	"producto.h"
+	"almacen.h"
+	"envios.h"
+	"transportistas.h"
+
+1747701470 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\envios.h
+	<string>
+	<vector>
+	"transportistas.h"
+
+1747802662 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuinformes.h
+	"usuarios.h"
+
+1747038336 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\globals.h
+	<vector>
+	"usuarios.h"
+	"bitacora.h"
+	"reportes.h"
+	"envios.h"
+	"facturacion.h"
+	"transportistas.h"
+	"pedidos.h"
+	"inventario.h"
+
+1747611974 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\reportes.h
+	<vector>
+	<string>
+	<ctime>
+	"bitacora.h"
+	"usuarios.h"
+
+1747881850 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\facturacion.h
+	<string>
+	<vector>
+	"clientes.h"
+	"pedidos.h"
+
+1747801571 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\inventario.h
+	"bitacora.h"
+	"usuarios.h"
+	"producto.h"
+	"almacen.h"
+	"proveedor.h"
+	<vector>
+	<string>
+	<ctime>
+
+1747619700 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\administracion.cpp
+	"administracion.h"
+	<iostream>
+	<vector>
+	"transportistas.h"
+	"globals.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747667206 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\almacen.cpp
+	"Almacen.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<limits>
+	<cstring>
+
+1747813561 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\bitacora.cpp
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<ctime>
+	<iomanip>
+	<unordered_map>
+	<chrono>
+	<cstring>
+	<set>
+	<cstring>
+
+1747791645 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\clientes.cpp
+	"clientes.h"
+	<iostream>
+	<algorithm>
+	<fstream>
+	"bitacora.h"
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+
+1747815024 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\envios.cpp
+	"envios.h"
+	"pedidos.h"
+	"transportistas.h"
+	"almacen.h"
+	"clientes.h"
+	"bitacora.h"
+	<fstream>
+	<iostream>
+	<algorithm>
+	<limits>
+	<iomanip>
+
+1747838812 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\facturacion.cpp
+	"facturacion.h"
+	"clientes.h"
+	"pedidos.h"
+	"bitacora.h"
+	"usuarios.h"
+	<fstream>
+	<iomanip>
+	<cstring>
+	<algorithm>
+	<regex>
+
+1747038336 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\globals.cpp
+	"globals.h"
+
+1747812333 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\inventario.cpp
+	"inventario.h"
+	"producto.h"
+	"almacen.h"
+	"proveedor.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<vector>
+	<algorithm>
+	<map>
+
+1747591662 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuadministracion.cpp
+	"menuadministracion.h"
+	"Administracion.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+	<algorithm>
+
+1747035653 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuadministracion.h
+	<vector>
+	"Administracion.h"
+	"usuarios.h"
+
+1747667206 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menualmacenes.cpp
+	"MenuAlmacenes.h"
+	"Almacen.h"
+	<iostream>
+	<limits>
+
+1747034343 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menualmacenes.h
+	<vector>
+	"Almacen.h"
+	"usuarios.h"
+
+1747818230 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuarchivo.cpp
+	"MenuArchivo.h"
+	"usuarios.h"
+	<iostream>
+	"globals.h"
+	"../backup.h"
+
+1747627807 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuarchivo.h
+
+1747038336 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menucatalogos.cpp
+	"MenuCatalogos.h"
+	"MenuClientes.h"
+	"MenuProveedores.h"
+	"MenuProductos.h"
+	"MenuAlmacenes.h"
+	"MenuAdministracion.h"
+	"MenuTransportistas.h"
+	<iostream>
+	<limits>
+
+1747038336 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menucatalogos.h
+	<vector>
+	"Clientes.h"
+	"Proveedor.h"
+	"Producto.h"
+	"Almacen.h"
+	"Administracion.h"
+	"transportistas.h"
+	"usuarios.h"
+
+1747032333 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuclientes.h
+	"Clientes.h"
+	"usuarios.h"
+	<vector>
+
+1747505635 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuproveedores.h
+	<vector>
+	"proveedor.h"
+	"usuarios.h"
+
+1747666700 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuproductos.h
+	<vector>
+	"Producto.h"
+	"usuarios.h"
+
+1747035653 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menutransportistas.h
+	<vector>
+	"transportistas.h"
+	"usuarios.h"
+
+1747791645 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuclientes.cpp
+	"MenuClientes.h"
+	"Clientes.h"
+	<iostream>
+	<vector>
+	<string>
+	<limits>
+
+1747835599 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuinformes.cpp
+	"menuinformes.h"
+	"usuarios.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+
+1747821677 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuprincipal.cpp
+	"menuprincipal.h"
+	"menuarchivo.h"
+	"menucatalogos.h"
+	"menuprocesos.h"
+	"menuinformes.h"
+	"usuarios.h"
+	"bitacora.h"
+	<vector>
+	<iostream>
+	"../backup.h"
+
+1747836905 c:\users\50240\documents\programacion1\logisticamenú_v2.9\include\menuprocesos.h
+	<vector>
+
+1747809886 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuprocesos.cpp
+	"MenuProcesos.h"
+	"usuarios.h"
+	<iostream>
+	"pedidos.h"
+	"Inventario.h"
+	"envios.h"
+	"facturacion.h"
+	"reportes.h"
+	"globals.h"
+	"clientes.h"
+	"producto.h"
+	"Almacen.h"
+
+1747600936 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuproductos.cpp
+	"MenuProductos.h"
+	"Producto.h"
+	<iostream>
+	<limits>
+
+1747802662 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menuproveedores.cpp
+	"MenuProveedores.h"
+	<iostream>
+
+1747035653 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\menutransportistas.cpp
+	"menutransportistas.h"
+	<iostream>
+	<limits>
+	<vector>
+	"globals.h"
+	"transportistas.h"
+
+1747836607 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\pedidos.cpp
+	"pedidos.h"
+	"clientes.h"
+	"producto.h"
+	"Almacen.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<algorithm>
+	<limits>
+	<ctime>
+	"envios.h"
+	"transportistas.h"
+
+1747629017 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\producto.cpp
+	"Producto.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<fstream>
+	<sstream>
+	<iomanip>
+	<string>
+	<limits>
+	"bitacora.h"
+
+1747802662 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\proveedor.cpp
+	"proveedor.h"
+	"bitacora.h"
+	<iostream>
+	<fstream>
+	<vector>
+	<algorithm>
+	<limits>
+	<cstring>
+	<ctime>
+
+1747667206 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\reportes.cpp
+	"Reportes.h"
+	<iostream>
+	<thread>
+	<chrono>
+	<iomanip>
+	<algorithm>
+	<sstream>
+	<fstream>
+	<cstdlib>
+	<limits>
+
+1747619700 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\transportistas.cpp
+	"transportistas.h"
+	<fstream>
+	<sstream>
+	<algorithm>
+	<limits>
+	<iostream>
+	<cstring>
+	<cerrno>
+	<vector>
+	"globals.h"
+
+1747810530 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\src\usuarios.cpp
+	"usuarios.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<iomanip>
+	<algorithm>
+	<sstream>
+	<set>
+	"globals.h"
+
+1747836165 c:\users\50240\documents\programacion1\logisticamenú_v2.9\backup.h
+	<string>
+	<vector>
+
+1747836165 source:c:\users\50240\documents\programacion1\logisticamenú_v2.9\backup.cpp
+	"backup.h"
+	<iostream>
+	<fstream>
+
