@@ -53,6 +53,9 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3151        Jennifer       CLIENTES            Cliente eliminado - ID: 3107       11/05/2025 18:01:55 
 3000        Jennifer       000                 LOGIN                              11/05/2025 18:09:56 
 <<<<<<< HEAD
+3000        Angel          000                 LOGIN                              11/05/2025 18:59:35 
+=======
+<<<<<<< HEAD
 3000        Jennifer       000                 LOGIN                              11/05/2025 18:47:00 
 3150        Jennifer       CLIENTES            Cliente agregado - ID: 3107        11/05/2025 18:47:28 
 3200        Jennifer       PROVEEDORES         Proveedor agregado - ID: 3158      11/05/2025 18:47:48 
@@ -90,3 +93,4 @@ ID_ACCION   USUARIO        MODULO              DESCRIPCION                      
 3001        alfin          ALMACEN             Almacén modificado - ID: 3262      11/05/2025 23:55:33 
 3002        alfin          ALMACEN             Almacén eliminado - ID: 3262       11/05/2025 23:55:43 
 3000        alfin          ADMINISTRACION      Administrador agregado - ID: 3363  11/05/2025 23:58:29 
+>>>>>>> d0e244506ed3392421b57272c4f3143802eddba4
